@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <link href="css/materialize.min.css" rel="stylesheet" type="text/css"/>
+        <link rel = "stylesheet" href = "css/material.css">
+        <script src="js/materialize.min.js" type="text/javascript"></script>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <script src="js/index.js" type="text/javascript"></script>
+        <title>HTML5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" data-activates="menu-lateral" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+                <a href="#!" class="brand-logo" >HTML5</a>
+                <ul id="menu-lateral" class="side-nav collapsible">
+                    <li class="white"><a href="#!" id="menu_main">Inicio</a></li>
+                    <li class="white">
+                        <a class="collapsible-header">HTML5<i class="material-icons"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!" id="menu_estructura">Estructura básica</a></li>
+                                <li><a href="#!" id="menu_formato">Formato texto</a></li>
+                                <li><a href="#!" id="menu_semanticas">Etiquetas semánticas</a></li>
+                                <li><a href="#!" id="menu_listas">Listas</a></li>
+                                <li><a href="#!" id="menu_tablas">Tablas</a></li>
+                                <li><a href="#!" id="menu_cajas">Modelo Cajas</a></li>
+                                <li><a href="#!" id="menu_formularios">Formularios</a></li>
+                                <li><a href="#!" id="menu_enlaces">Enlaces</a></li>
+                                <li><a href="#!" id="menu_multimedia">Multimedia</a></li>
+                                <li><a href="#!" id="menu_canvas">Canvas</a></li>
+                               
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="white">
+                        <a class="collapsible-header">Accesibilidad<i class="material-icons"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!" id="menu_wcag">WCAG</a></li>
+                                <li><a href="#!" id="menu_nucleo">Nucleo</a></li>
+                                <li><a href="#!" id="menu_legales">Normativa</a></li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                     <li class="white">
+                        <a class="collapsible-header">CSS<i class="material-icons"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#!" id="menu_enlazar">Enlazar</a></li>
+                                <li><a href="#!" id="menu_fondo">Fondo</a></li>
+                                <li><a href="#!" id="menu_fuentes">Fuentes</a></li>
+                                <li><a href="#!" id="menu_textos">Textos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#!" id="menu_creditos">Sobre esta aplicación</a></li>
+                    <li><a href="#!" id="menu_ayuda">Manual usuario</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            
+            <div id="panel_main" class="panel" hidden>
+                <h1>Bienvenido a nuestra Guía de HTML5</h1>
+            </div>
+            <!-- HTML5 -->
+            <div id="panel_estructura" class="panel" hidden>               
+                <h1>Estructura básica HTML5</h1>
+                <hr/>
+                <pre><b>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="es"&gt;
+                    &lt;head&gt;
+                            &lt;meta charset = "UTF-8"/&gt;
+                            &lt;title&gt;Estructura basica html5&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;link rel="stylesheet" type="text/css" href="theme.css"&gt;
+                        &lt;script&gt;document.getElementById("demo").innerHTML = "Hello JavaScript!";&lt;/script&gt;
+                    &lt;/body&gt;
+                    &lt;footer&gt;
+                        &lt;!--Esta vez no usaremos el pie de pagina--&gt;
+                    &lt;/footer&gt;
+                &lt;/html&gt;
+               </b> </pre>
+                <hr/>
+                <h2>&lt;meta&gt;</h2>
+                <p><b>Indica el codigo del archivo y proporciona metadatos en general</b></p>
+                <p>&lt;meta charset = "UTF-8"/&gt;</p>
+                <hr/>
+                <h2>&lt;!DOCTYPE&gt;</h2>
+                <p><b>Especifica de que tipo de documento se trata</b></p>
+                <p>&lt;!DOCTYPE html&gt;</p>
+                <hr/>
+                <h2>&lt;html&gt;</h2>
+                <p><b>Marca la raiz de la pagina</b></p>
+   
+               <h3>&lt;head&gt;</h3>
+               <p><b>Marca el encabezado de la pagina</b></p>
+   
+               <h3>&lt;body&gt;</h3>
+               <p><b>Marca el cuerpo de la pagina</b></p>
+   
+               <h3>&lt;footer&gt;</h3>
+               <p><b>Marca el pie de pagina</b></p>
+               <hr/>
+                <h2>&lt;link&gt;</h2>
+               <p><b>Define enlaces  para llamar a un documento externo, es un elemento vacío</b></p>
+               <p>&lt;link rel="stylesheet" type="text/css" href="theme.css"&gt;</p>
+               <p><a href="https://www.w3schools.com/tags/tag_link.asp">w3schools.com</a></p>
+               <hr/>
+               <h2>&lt;Script&gt;</h2>
+               <p><b>Se suele utilizar para definir una llamada a javascript</b></p>
+               <p>&lt;script&gt;document.getElementById("demo").innerHTML = "Hello JavaScript!";&lt;/script&gt;</p>
+               <p><a href="https://www.w3schools.com/tags/tag_script.asp">w3schools.com</a></p>
+               <hr/>
+               <h2>&lt;!--...--&gt;</h2>
+               <p>Es un comentario, sirve para explitar el codigo</p>
+                <p>&lt;!--Esto es un comentario--&gt;</p>
+            </div>
+            <div id="panel_formato" class="panel" hidden>
+                <h1>Formato básico de texto</h1>
+                <p>usamos las etiquetas &lt;b&gt;y &lt;/b&gt; y &lt;strong&gt;y &lt;/strong&gt;para remarcar una parte del texto en negritra </p>
+                <p>usamoas las etiquetas &lt;i&gt;y &lt;/i&gt; o &lt;em&gt; &lt;/em&gt;para poner una parte del texto en cursiva</p>
+                <p>usamos las etiquetas &lt;u&gt;y &lt;/u&gt;para subrayar una parte del texto</p>
+                <p>usamos las etiquetas &lt;small&gt; y &lt;/small&gt; para poner el texto mas pequeño</p>
+                <p>usamos las etiquetas &lt;big&gt; y &lt;/big&gt; para poner el texto mas grande</p>
+                <p>usamos las etiquetas &lt;sub&gt; y &lt;/sub&gt; para poner un subíndice al texto</p>
+                <p>usamos las etiquetas &lt;sup&gt; y &lt;/sup&gt; para poner un superindice al texto </p>
+                <p>usamos las etiquetas &lt;strike&gt; y &lt;/strike&gt; para tachar una parte del texto</p>
+                <p>usamos las etiquetas &lt;s&gt; y &lt;/s&gt;para tachar una parte del texto</p>  
+                <hr/>
+            </div>
+            <div id="panel_semanticas" class="panel" hidden>
+                <h1>Etiquetas semánticas</h1>                
+                <p>usamos la etiqueta &lt;header&gt;y &lt;/header&gt; cuando queremos indicar que el texto forma parte de la cabecera de la pagina</p>    
+                <p>usamos la etiqueta &lt;footer&gt; y &lt;/footer&gt;cuando queremos que el texto sea una seccion, un articulo, etc</p>
+                <p>usamos la etiquetas &lt;section&gt;y &lt;/section&gt;cuando queremos dividir un elemento en diferentes partes o secciones</p>
+                <p>usamos la etiqueta &lt;nav&gt;y &lt;/nav&gt;cuando queremos que un elemento muestre su contenido como una seccion de enlaces </p>
+                <p>usamos la etiqueta &lt;article&gt;y &lt;/article&gt;dentro de alguna etiqueta como "section" para que pueda definir los elemenos del interio de forma íntegra </p>
+                <p>usamos la etiqueta &lt;hgroup&gt;y &lt;hgroup&gt;cuando queremos agrupar varios titulos y definirlos</p>
+                <p>usamos la etiqueta &lt;figure&gt;y &lt;figure&gt;cuando queremos agrupar elementos relativos en una imagen</p>
+                <p>usamos la etiqueta &lt;figcaption&gt;y &lt;figcaption&gt;cuando queremos indicar el titulo de una imagen</p>
+                <p>usamos la etiqueta &lt;aside&gt;y &lt;aside&gt;cuando queremos dar un texto aparter dentro de un articulo</p>
+                <hr/>
+            </div>
+            <div id="panel_listas" class="panel" hidden>
+                <h1>Listas</h1>                
+                <p>Tenemos dos tipos: <em>ordenadas y desordenadas</em>. Para ambas, los elementos que contienen deben ir entre las etiquetas &lt;li&gt;&lt;/li&gt;.</p>
+                
+                <h2>Listas ordenadas</h2>
+                <p>Para las listas ordendas usamos la etiqueta <strong>&lt;ol&gt;</strong>.</p>
+                <p>Los elementos deben ir entre las etiquetas <strong>&lt;li&gt; &lt;/li&gt;</strong>.</p>
+                <p>Ejemplo de lista ordenada:</p>
+                <ol>
+                <li>Primer elemento.</li>
+                <li>Segundo.</li>
+                <li>Tercer elemento de la lista.</li>
+                </ol>
+                <p>Podemos usar diferentes numeraciones, como números romanos, letras, 
+                números romanos en minúscula, letras mayúsculas, etc. Ejemplo: 
+                <strong>&lt;ol type="a|A|i|I|1"&gt; &lt;/ol&gt;</strong>."</p>
+                <p>Ejemplo de lista ordenada con números romanos, usando <strong>&lt;ol type="I"&gt; &lt;/ol&gt;</strong>:</p>
+                <ol type="I">
+                <li>Primer elemento.</li>
+                <li>Segundo.</li>
+                <li>Tercer elemento de la lista.</li>
+                </ol>
+                <p>Ejemplo de lista ordenada con letras, usando <strong>&lt;ol type="a"&gt; &lt;/ol&gt;</strong>:</p>
+                <ol type="a">
+                <li>Primer elemento.</li>
+                <li>Segundo.</li>
+                <li>Tercer elemento de la lista.</li>
+                </ol>
+                <p>Ejemplo de lista en orden inverso usando <strong>&lt;ol reversed&gt; &lt;/ol&gt;</strong>:</p>
+                <ol reversed>
+                <li>Primer elemento.</li>
+                <li>Segundo.</li>
+                <li>Tercer elemento de la lista.</li>
+                </ol>
+                
+                <h2>Listas desordenadas</h2>
+                <p>En las listas desordenadas usamos la etiqueta <strong>&lt;ul&gt;</strong>.</p>
+                <p>Cada elemento debe ir entre las etiquetas <strong>&lt;li&gt; &lt;/li&gt;</strong>.</p>
+                <p>Ejemplo de lista desordenada:</p>
+                <ul>
+                <li>Primer elemento.</li>
+                <li>Segundo.</li>
+                <li>Tercer elemento de la lista.</li>
+                </ul>
+                <p>Lista desordenada con <strong>&lt;ul type="square"&gt; &lt;/ul&gt;</strong>:</p>
+                <ul type="square">
+                <li>Primer elemento.</li>
+                <li>Segundo.</li>
+                <li>Tercer elemento de la lista.</li>
+                </ul>
+                <p>Lista desordenada con type="disc" (recuerda que no hace falta cambiar nada en los &lt;li&gt;:</p>
+                <ul type="disc">
+                <li>Primer elemento.</li>
+                <li>Segundo.</li>
+                <li>Tercer elemento de la lista.</li>
+                </ul>
+                <p>Lista desordenada con type="circle":</p>
+                <ul type="circle">
+                <li>Primer elemento.</li>
+                <li>Segundo.</li>
+                <li>Tercer elemento de la lista.</li>
+                </ul>
+                
+                <h2>Listas de listas</h2>
+                <p>Ejemplo de lista anidada:</p>
+                <ul>
+                <li>Café</li>
+                <li>Té
+                <ul>
+                <li>Té negro</li>
+                <li>Té verde</li>
+                </ul>
+                </li>
+                <li>Leche</li>
+                </ul>
+            </div>
+            <div id="panel_tablas" class="panel" hidden>
+                <h1>Tablas</h1>                
+                <p>La definición de tabla comienza siempre con la etiqueta <strong>&lt;table&gt;.</strong> 
+                    ,utilizando <strong>&lt;tr&gt;</strong> para filas y <strong>&lt;td&gt;</strong> para columnas.</p>
+                <p>Para indicar una celda de cabecera se usa la etiqueta <strong>&lt;th&gt;</strong>.</p>
+                <p>Para dejar una celdilla en blanco se usa la exprexion <strong>& nbsp ;</strong></p>   
+                <p>Para poner un titulo a la tabla se usa la etiquqeta <strong>&lt;caption&gt;</strong>.</p>
+                <hr/>
+                <p>Existen tres etiquetas para diferenciar las tres partes de una tabla, son:</p>
+                <ul type="square">
+                    <li><strong>thead</strong>:Indica la cabezera de la tabla.</li>
+                    <li><strong>tbody</strong>:Indica el cuerpo de la tabla.</li>
+                    <li><strong>tfoot</strong>:indica el pie de la tabla.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <table border="1" rules="groups">
+                <caption>Ventas por secciones</caption>
+                    <thead>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Hardware</td>
+                            <td>Software</td>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <th>25000</th>
+                            <th>22000</th>
+                        </tr>
+                    </tfoot>
+    
+                    <tbody>
+                        <tr>
+                            <th>Enero</th>
+                            <td>12000</td>
+                            <td>15000</td>
+                        </tr>
+                        <tr>
+                            <th>Febrero</th>
+                            <td>13000</td>
+                            <td>9000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <hr/>
+                <br/>
+                <p>También es posible combinar celdas para conseguir tablas con formas mas caprichosas.
+                    Las etiquetas <strong>td</strong> y <strong>th</strong> son las que poseen los atributos que nos permiten realizar esta operacion, los atributos son los siguientes:</p>  
+    
+                <ul>
+                    <li><strong>colspan</strong>:Combina la celda actual con el número de celdas a la derecha que se
+                        indique. Por ejemplo colspan="3" une esta celda con las dos que tiene
+                        a su derecha, formando una combinación de tres celdas en horizontal.</li>
+                    <li><strong>rowspan</strong>Combina la celda actual con el número de celdas hacia abajo que se
+                        indique. Por ejemplo rowspan="3" une esta celda con las dos que tiene
+                        hacia abajo, formando una combinación de tres celdas en vertical.</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <table border="1" width="50%">
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="2">&nbsp;</td>
+                        <td rowspan="3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <br/>
+                <hr/>
+                <br/>
+                <table border="1" cellpadding="5" cellspacing="1" width="0%">
+    
+                <caption><strong>ATRIBUTOS DE LA ETIQUETA TABLE</strong></caption>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Significado</th>
+                </tr>
+                <tr>
+                    <th>border</th>
+                    <td>Indica la anchura del borde de la tabla.</td>
+                </tr>
+                <tr>
+                    <th>cellpadding</th>
+                    <td>Indica el tamaño de la tabla.</td>
+                </tr>
+                <tr>
+                    <th>cellspacing</th>
+                    <td>Indica el espacio entre los cuadrados de la tabla</td>
+                </tr>
+                <tr>
+                    <th>width</th>
+                    <td>Indica la anchura de la tabla (usando el signo %).</td>
+                </tr>
+                <tr>
+                    <th>rule</th>
+                    <td>
+                        <ul>
+                            <li><strong>none</strong>:Sin líneas</li>
+                            <li><strong>groups</strong>:Pone solo el cuadrado que rodea a la tabla.</li>
+                            <li><strong>rows</strong>:Pone solo las lineas horizontales.</li>
+                            <li><strong>cols</strong>:Solo pone las lineas verticales.</li>
+                            <li><strong>all</strong>:Todos los borde de la tabla (valor por defecto).</li>
+                        </ul>
+                    </td>
+                </tr>
+                </table>
+            </div>
+            <div id="panel_cajas" class="panel" hidden>
+                <h1>Modelo de cajas</h1>                
+                <p>Cada elemento HTML que podemos encontrar en una p&aacute;gina web se encuentra rodeado de una caja con varias propiedades que pueden ser modificadas.</p>
+                <p>La figura muestra esas propiedades.</p>
+                <p><img src="http://juangu.es/lmsgi/tema02_html5/cajas.jpg" /></p>
+                <p>Adem&aacute;s del contenido, cada elemento puede tener o no un borde y, adem&aacute;s, podemos modificar la distancia entre el borde y el l&iacute;mite de la caja (<strong>margin</strong>) y la distancia entre ese borde y el comienzo del contenido (<strong>padding</strong>).</p>
+                <p>Estas opciones nos proporcionan un gran control sobre c&oacute;mo debe situarse cada elemento.</p>
+                                    
+                        <h2>1.1.Altura y anchura de una caja</h2>
+                                <p>Cada elemento HTML de una p&aacute;gina web cuenta con una anchura y una altura espec&iacute;fica. En muchos casos esas dimensiones se las proporciona el propio contenido, como en un p&aacute;rrafo o una imagen, por ejemplo. Esos valores de anchura<strong>&nbsp;</strong>(<strong>width</strong>) y de altura (<strong>height</strong>) pueden ser modificados mediante las hojas de estilo, gracias a las propiedades del mismo nombre.</p>
+                                <p>As&iacute; podemos hacer p&aacute;rrafos m&aacute;s estrechos, im&aacute;genes que se sobredimensionen o simplemente ajustar diferentes bloques, para que se acomoden correctamente en la pantalla.</p>
+                                <p>Los valores&nbsp;<strong>width&nbsp;</strong>y&nbsp;<strong>height&nbsp;</strong>se acompa&ntilde;an de un valor num&eacute;rico exacto o de un porcentaje, como en otras muchas propiedades.</p>
+                                <p>body {</p>
+                                <p>principal { width: 400px;<br />background-color: rgb(0, 126, 0);<br />}</p>
+                        
+                        <h2>1.2.Margen</h2>
+                                <p>Comenzaremos con la imagen. Con tan s&oacute;lo modificar su margen, observaremos c&oacute;mo se distancia del resto de los elementos. Usaremos la propiedad&nbsp;<strong>margin&nbsp;</strong>seguida de un valor num&eacute;rico o de un porcentaje:</p>
+                                <blockquote>
+                                <p>img { margin: 20px; }</p>
+                                </blockquote>
+                        
+                        <h2>1.3.Relleno</h2>
+                                <p>Probaremos ahora a modificar su relleno, es decir, la distancia imaginaria entre un hipot&eacute;tico borde y la imagen propiamente dicha. Para ello emplearemos la propiedad&nbsp;<strong>padding</strong>, exactamente igual que hicimos con la anterior. Probemos con un valor menos exagerado:</p>
+                                <blockquote>
+                                <p>img { padding: 5px; }</p>
+                                </blockquote>
+                        
+                        <h2>1.4.Borde</h2>
+                                <p>Si recargamos la p&aacute;gina con esta incorporaci&oacute;n, observaremos que, en efecto, la imagen se separa un poco m&aacute;s, esos 5 p&iacute;xeles por cada lado, pero no es posible distinguir d&oacute;nde acaba el efecto del margen y comienza el del relleno. Para poder diferenciar los valores, deber&iacute;amos tener un borde en la imagen.</p>
+                                <blockquote>
+                                <p>img {</p>
+                                <blockquote>border-width: 2px;<br />border-style: solid;<br />border-color: #007000;<br />}</blockquote>
+                                </blockquote>
+                                <p>Con los conocimientos que tenemos ya de CSS podemos intuir con facilidad qu&eacute; es lo que hace cada una de esas tres propiedades: en una definimos el&nbsp;<strong>grosor del borde</strong>, en otra el&nbsp;<strong>tipo de l&iacute;nea</strong>&nbsp;y en la &uacute;ltima su<strong>&nbsp;color</strong>.</p>
+
+                        <h2>1.5.Laterales</h2>
+                                <p>Tanto&nbsp;<strong>margin</strong>, como&nbsp;<strong>padding&nbsp;</strong>y&nbsp;<strong>border&nbsp;</strong>se pueden emplear para modificar laterales de una caja, con independencia de los dem&aacute;s. A&ntilde;adiendo a cada uno de ellos la variaci&oacute;n&nbsp;<strong>-left</strong>&nbsp;(izquierda),&nbsp;<strong>-right</strong>&nbsp;(derecha),&nbsp;<strong>-top</strong>&nbsp;(arriba) o&nbsp;<strong>-bottom</strong>&nbsp;(abajo) conseguimos que s&oacute;lo afecte al valor o valores indicados.</p>
+                                <p>En la figura hemos aplicado estas propiedades para el t&iacute;tulo de la p&aacute;gina:</p>
+                                <blockquote>
+                                <p>h1 {</p>
+                                <blockquote>margin-top:40px;<br />padding-left: 5px;<br />padding-right:5px;<br />border-top-width: 2px;<br />border-top-style: dotted;<br />border-top-color: #007000;<br />border-bottom-width: 2px;<br />border-bottom-style: double;<br />border-bottom-color: #007000;<br />}</blockquote>
+                                </blockquote>
+
+                        <h2>1.6.M&aacute;s opciones para los bordes</h2>
+                                <p>Para los bordes podemos definir tres propiedades: su anchura, su estilo y su color. La anchura y el color se definen con las medidas habituales y los sistemas que ya hemos analizado. El&nbsp;<strong>estilo</strong>, por su parte, se basa en una serie de valores concretos:</p>
+                                <ul>
+                                <li><strong>dotted</strong>: punteado.</li>
+                                <li><strong>dashed</strong>: l&iacute;nea discontinua.</li>
+                                <li><strong>solid</strong>: l&iacute;nea continua.</li>
+                                <li><strong>double</strong>: l&iacute;nea doble.</li>
+                                <li><strong>groove</strong>: tipo de relieve.</li>
+                                <li><strong>ridge</strong>: tipo de relieve.</li>
+                                <li><strong>inset</strong>: tipo de relieve.</li>
+                                <li><strong>outset</strong>: tipo de relieve.</li>
+                                <li><strong>none</strong>: empleado para indicar que no habr&aacute; borde</li>
+                                </ul>
+                                <p>Es cuesti&oacute;n de probar algunos modelos. El valor&nbsp;<strong>solid</strong>&nbsp;es la l&iacute;nea sencilla, la m&aacute;s empleada.</p>
+                                <p>Como ya suced&iacute;a con otras propiedades, podemos reagrupar los valores referidos a los bordes en una sola propiedad gen&eacute;rica denominada&nbsp;<strong>border</strong>. Para ello estableceremos los valores separados por espacios y en el orden de&nbsp;<strong>tama&ntilde;o, estilo y color</strong>, como en este ejemplo que har&iacute;a la misma funci&oacute;n que el recuadro anterior:</p>
+                                <blockquote>
+                                <p>img { border: 2px solid #007000;}</p>
+                                </blockquote>
+                        
+                        <h2>1.7.Esquinas redondeadas</h2>
+                                <p>Con los estilos actuales podemos trazar un borde alrededor de una figura y que tenga sus esquinas redondeadas.</p>
+                                <p>La propiedad que lo permite es&nbsp;<strong>border-radius</strong>, acompa&ntilde;ada de un valor num&eacute;rico. El ejemplo anterior, con la incorporaci&oacute;n de esta propiedad, dar&iacute;a como resultado el rect&aacute;ngulo de la figura:</p>
+                                <blockquote>
+                                <p>img {</p>
+                                <blockquote>border: 2px solid #007000;<br />border-radius:25px;<br />}</blockquote>
+                                </blockquote>
+                        
+                        <h2>1.8.Sombras</h2>
+                                <p>Las modernas hojas de estilo proporcionan a cualquier elemento la capacidad de proyectar una sombra. Ya vimos que esto funcionaba con el texto, pero adem&aacute;s contamos con la propiedad&nbsp;<strong>box-shadow&nbsp;</strong>para crear sombras en cualquier caja de nuestra p&aacute;gina web, lo que hace que sea posible aplicarselo a cualquier elemento.</p>
+                                <blockquote>
+                                <p>table {box-shadow: 8px 8px 6px #aaaaaa; }</p>
+                                </blockquote>
+                                <p>Los valores que conforman la sombra son similares a los que vimos para las sombras de texto, es decir,&nbsp;<strong>desplazamiento horizontal</strong>,&nbsp;<strong>vertical</strong>,&nbsp;<strong>difuminado</strong>&nbsp;y<strong>&nbsp;color de sombra.</strong></p>
+
+                        <h2>1.9.Elementos flotantes</h2>
+                                <p>Los elementos de una p&aacute;gina web pueden reubicarse a la izquierda o a la derecha con tan s&oacute;lo emplear la propiedad&nbsp;<strong>float</strong>, haciendo que el resto del contenido se sit&uacute;e alrededor de ese elemento.</p>
+                                <p>En el siguiente ejemplo la regla:</p>
+                                <blockquote>
+                                <p>img { float:left;}</p>
+                                </blockquote>
+                                <p>provoca que el texto se sit&uacute;e alrededor de la imagen.</p>
+
+             <h1>2.Capas: etiqueta div</h1>
+                <p>La etiqueta&nbsp;<strong>&lt;div&gt;</strong>&nbsp;se emplea para definir un bloque de contenido o secci&oacute;n de la p&aacute;gina, para poder aplicarle diferentes estilos e incluso para realizar operaciones sobre ese bloque espec&iacute;fico.</p>
+                <p>El uso de la etiqueta&nbsp;<strong>div</strong>&nbsp;es sencillo. Observemos este ejemplo:</p>
+                <blockquote>
+                <p>&lt;div&gt;<br />&lt;h1&gt;&Iacute;ndice&lt;/h1&gt;<br />P&aacute;gina principal&lt;br /&gt;<br />Material multimedia&lt;br /&gt;<br />Autores&lt;br /&gt;<br />&lt;/div&gt;</p>
+                </blockquote>
+                <p>Hemos empleado la etiqueta para crear un bloque, que har&aacute; las veces de &iacute;ndice de contenidos. Visualmente la etiqueta no provoca ning&uacute;n cambio, pero en la estructura interna del documento hemos aplicado una divisi&oacute;n muy importante.</p>
+                <p>Probemos ahora a aplicar una modificaci&oacute;n a la apariencia de ese bloque, a&ntilde;adiendo un estilo de borde a la etiqueta&nbsp;<strong>&lt;div&gt;</strong>; quedar&iacute;a as&iacute;:</p>
+                <blockquote>
+                <p>&lt;div style="border: 2px solid rgb(204, 102, 204);"&gt;<br />&lt;h1&gt;&Iacute;ndice&lt;/h1&gt;<br />P&aacute;gina principal&lt;br /&gt;<br />Material multimedia&lt;br /&gt;<br />Autores&lt;br /&gt;<br />&lt;/div&gt;</p>
+                </blockquote>
+                <p>Eso es todo lo que necesitamos saber: la etiqueta&nbsp;<strong>&lt;div&gt;</strong>&nbsp;configura espacios dentro de la p&aacute;gina.</p>
+
+                        <h2>2.1.La etiqueta span</h2>
+                                <p>Despu&eacute;s de un&nbsp;<strong>&lt;/div&gt;</strong>&nbsp;se comienza con una nueva l&iacute;nea. Esa es una de las diferencias principales con la otra etiqueta que empleamos para diferenciar contenidos, la etiqueta&nbsp;<strong>&lt;span&gt;</strong>. Con ella conseguimos un efecto similar, pero en el interior de un p&aacute;rrafo. Recordemos que span se emplea con frecuencia para aplicar estilos en el interior de un bloque de texto.</p>
+
+                        <h2>2.2.Diferenciando las etiquetas div y span</h2>
+                                <p>Adicionalmente, las etiquetas&nbsp;<strong>div</strong>&nbsp;y&nbsp;<strong>span</strong>&nbsp;se suelen acompa&ntilde;ar de uno o dos par&aacute;metros destinados a identificar ese bloque:</p>
+                                <ul>
+                                <li><strong>id</strong>: permite establecer un identificador &uacute;nico para el bloque. As&iacute; podremos referirnos al bloque de forma inequ&iacute;voca.</li>
+                                <li><strong>class</strong>: es similar a&nbsp;<strong>id</strong>, pero con la ventaja de que se puede repetir; as&iacute; que podemos tener varios&nbsp;<strong>&lt;div&gt;</strong>&nbsp;diferentes con la misma clase.</li>
+                                </ul>
+                                <p>Usando&nbsp;<strong>id&nbsp;</strong>y&nbsp;<strong>class&nbsp;</strong>podemos diferenciar unos&nbsp;<strong>div</strong>&nbsp;de otros y as&iacute; aplicarles estilos CSS diferentes o hacer que act&uacute;en de forma distinta.</p>
+                                <p>Las etiquetas&nbsp;<strong>id&nbsp;</strong>y&nbsp;<strong>class&nbsp;</strong>se utilizan como se muestra en el ejemplo:</p>
+                                <blockquote>
+                                <p>&lt;div id="indice"&gt;<br />&lt;br&gt;&iacute;ndice<br />&lt;/div&gt;<br />&lt;div class="destacado"&gt;<br />Este texto se destaca mediante un estilo.<br />&lt;/div&gt;<br />&lt;div id="articulo15" class="articulos_estandar"&gt;<br />Texto de un art&iacute;culo<br />&lt;/div&gt;</p>
+                                </blockquote>
+                                <p>Como se puede apreciar, las etiquetas&nbsp;<strong>id&nbsp;</strong>y&nbsp;<strong>class&nbsp;</strong>se pueden mezclar. Se mantiene siempre esa norma: los&nbsp;<strong>id&nbsp;</strong>son &uacute;nicos dentro de una p&aacute;gina, mientras que los&nbsp;<strong>class&nbsp;</strong>se suelen repetir para que varios elementos tomen un mismo estilo.</p>
+
+                <h1>3.Para ampliar</h1>
+                <p>Entre las opciones que encontramos en las hojas de estilo modernas se encuentra la propiedad&nbsp;<strong>transform&nbsp;</strong>que se emplea para aplicar transformaciones a un elemento. &Eacute;stas son las opciones disponibles:</p>
+                <ul>
+                <li><strong>translate</strong>,&nbsp;<strong>translate3d</strong>,&nbsp;<strong>translateX</strong>,&nbsp;<strong>translateY&nbsp;</strong>y&nbsp;<strong>translateZ</strong>: definen diferentes tipos de traslaciones sobre el objeto indicado.</li>
+                <li><strong>scale</strong>,&nbsp;<strong>scale3d</strong>,&nbsp;<strong>scaleY</strong>,&nbsp;<strong>scaleY&nbsp;</strong>y&nbsp;<strong>scaleZ</strong>: redimensionan el objeto, en su conjunto, en ejes parciales.</li>
+                <li><strong>rotate</strong>,&nbsp;<strong>rotate3d</strong>,&nbsp;<strong>rotateX</strong>,&nbsp;<strong>rotateY</strong>,&nbsp;<strong>rotateZ</strong>: aplican una rotaci&oacute;n al objeto, como en los casos anteriores; se rota en su conjunto o s&oacute;lo en un plano espec&iacute;fico. Van seguidas de un &aacute;ngulo.</li>
+                <li><strong>skew</strong>,&nbsp;<strong>skewX&nbsp;</strong>y&nbsp;<strong>skewY</strong>: realizan un abatimiento del elemento.</li>
+                <li><strong>perspective</strong>: modifica su perspectiva.</li>
+                <li><strong>matrix&nbsp;</strong>y&nbsp;<strong>matrix3d</strong>: definen una transformaci&oacute;n utilizando 6 valores o 16 en el segundo caso.</li>
+                </ul>
+
+                        <h2>3.1.Los prefijos</h2>
+                                <p>Las transformaciones nos sirven para explicar un peque&ntilde;o inconveniente del uso de propiedades modernas. En algunos casos, las propiedades m&aacute;s actuales no funcionan en todos los navegadores y en otros, cada navegador ha realizado su propia implementaci&oacute;n de la propiedad, a la espera de que el grupo que define las hojas de estilo CSS3 complete del todo la definici&oacute;n de propiedades.</p>
+                                <p>&iquest;C&oacute;mo se diferencian, pues, las implementaciones que hace cada navegador? A&ntilde;adiendo un prefijo espec&iacute;fico diferente en cada caso. As&iacute; la propiedad&nbsp;<strong>transform&nbsp;</strong>es un caso protot&iacute;pico. En la actualidad el panorama es el siguiente:</p>
+                                <p>Tenemos la propiedad real, llamada&nbsp;<strong>transform</strong>, que no funciona a&uacute;n en ning&uacute;n navegador.</p>
+                                <ul>
+                                <li><em>Internet Explorer</em>&nbsp;puede realizar todas las transformaciones 2D, pero para ello usaremos su propia versi&oacute;n llamada&nbsp;<strong>-ms-transform</strong>.</li>
+                                <li><em>Firefox&nbsp;</em>tambi&eacute;n hace lo mismo, pero con su versi&oacute;n llamada&nbsp;<strong>-moz-transform</strong>.</li>
+                                <li><em>Opera&nbsp;</em>funciona como los dos anteriores, pero con una versi&oacute;n llamada<strong>&nbsp;-o-transform</strong>.</li>
+                                <li><em>Chrome&nbsp;</em>y&nbsp;<em>Safari</em>, que emplean el mismo motor de presentaci&oacute;n de p&aacute;ginas, adem&aacute;s de las 2D hacen las transformaciones 3D ya, pero con su propiedad&nbsp;<strong>-webkit-transform</strong>.</li>
+                                </ul>
+                                <p>En este punto s&oacute;lo podemos estar agradecidos porque s&oacute;lo haya cinco navegadores web populares: imaginemos un mundo con 50 de ellos...</p>
+                                <p>Todo esto nos lleva a que, si quisi&eacute;ramos aplicar una rotaci&oacute;n de 30 grados a un elemento y quisi&eacute;ramos que funcionase en cualquier navegador, deber&iacute;amos a&ntilde;adir una propiedad similar a &eacute;sta:</p>
+                                <blockquote>
+                                <p>div#bloque5 {</p>
+                                <blockquote>-ms-transform:rotate(30deg);<br />-moz-transform:rotate(30deg);<br />-o-transform:rotate(30deg);<br />-webkit-transform:rotate(30deg);<br />}</blockquote>
+                                </blockquote>
+
+                        <h2>3.2.Transiciones</h2>
+                                <p>Las transiciones permiten definir la velocidad y el momento en que se aplica una variaci&oacute;n en una propiedad.</p>
+                                <p>Al igual que con las transformaciones, las transiciones no est&aacute;n implementadas en ning&uacute;n navegador sin utilizar los prefijos anteriores. Si lo hacemos, contaremos con la propiedad&nbsp;<strong>transition-property</strong>, que va seguida de alguna transici&oacute;n y de la propiedad<strong>&nbsp;transition-duration</strong>, seguida de un valor en segundos. Opcionalmente podemos a&ntilde;adir&nbsp;<strong>transition-delay</strong>&nbsp;para hacer una pausa, antes de que comience la transici&oacute;n.</p>
+                                <p>El resultado es una animaci&oacute;n que se desarrolla a lo largo del tiempo. Para ver c&oacute;mo funciona probaremos a a&ntilde;adir lo siguiente a alg&uacute;n elemento de nuestra p&aacute;gina web:</p>
+                                <blockquote>
+                                <p>div#bloque1:hover {</p>
+                                <blockquote>width:500px ;<br />-webkit-transition-property: width;<br />-webkit-transition-duration: 10s;<br />-webkit-transition-delay: 1s;<br />}</blockquote>
+                                </blockquote>
+                                <p>Al aplicarlo en&nbsp;<em>Chrome</em>, veremos c&oacute;mo el elemento en cuesti&oacute;n va incrementando su anchura durante 10 segundos, pero s&oacute;lo cuando haya pasado 1 segundo desde que se carg&oacute; la p&aacute;gina. Para que esto tenga lugar, necesitaremos cambiar la propiedad de alg&uacute;n modo. Por eso definimos el estilo como:&nbsp;<strong>hover</strong>&nbsp;(cuando el rat&oacute;n pase sobre el elemento), aunque tambi&eacute;n podr&iacute;amos realizar la operaci&oacute;n al pulsar un bot&oacute;n externo, usando eventos, etc.</p>
+                                <p>La clave de su funcionamiento est&aacute; en que va a transformar la anchura (<strong>transition-property: width</strong>) del elemento bloque1 para ampliar hasta los 500 p&iacute;xeles pero, en lugar de hacerlo br&uacute;scamente, lo har&aacute; progresivamente durante 10 segundos (<strong>transition-duration</strong>).</p>
+                                <p>Podemos indicar tantas propiedades como necesitemos y cambiaremos s&oacute;lo aquellas que queramos mediante&nbsp;<strong>transition-property</strong>&nbsp;seguido de las propiedades, o todas juntas si indicamos&nbsp;<strong>transition-property:all</strong>.</p>
+
+             <h1>4.Animaciones</h1>
+                <p>Las transiciones se pueden llevar un paso m&aacute;s all&aacute; empleando animaciones. El concepto es similar, pero utilizando fotogramas clave que definimos a trav&eacute;s de una especie de funci&oacute;n dentro de la hoja de estilos.</p>
+                <p>Estas l&iacute;neas definir&iacute;an esa funci&oacute;n, en la que podemos definir tantos estados como necesitemos. En el ejemplos estamos indicando que, cuando la animaci&oacute;n est&eacute; al 50%, la anchura del cuadro debe haber crecido hasta los 500 p&iacute;xeles, manteniendo su altura. En el 100%, adem&aacute;s de esos 500 p&iacute;xeles, la altura variar&aacute; hasta los 300 p&iacute;xeles y cambiar&aacute; su color.</p>
+                <blockquote>
+                <p>@-webkit-keyframes mianimacion{</p>
+                <blockquote>0% {&nbsp;&nbsp;&nbsp; }<br />50% {width:500px; height:60px; }<br />100% {&nbsp; width:500px; height:300px; background-color:#222266; }<br />}</blockquote>
+                </blockquote>
+                <p>Ahora, para que esa funci&oacute;n se ejecute, la invocaremos desde la propiedad habitual, utilizando varias propiedades del tipo&nbsp;<strong>animation-</strong>.&nbsp;</p>
+                <blockquote>
+                <p>div#bloque1:hover {</p>
+                <blockquote>-webkit-animation-name: "mianimacion";<br />-webkit-animation-duration: 5s;<br />-webkit-animation-iteration-count: infinite;<br />-webkit-animation-timing-function: ease-in-out;<br />}</blockquote>
+                </blockquote>
+                <p>La primera l&iacute;nea llama a la funci&oacute;n, la segunda define su duraci&oacute;n, la tercera indica cu&aacute;ntas veces se repetir&aacute; (podemos usar&nbsp;<strong>infinite&nbsp;</strong>para repeticiones infinitas) y la &uacute;ltima l&iacute;nea indica c&oacute;mo se realizar&aacute; la transici&oacute;n (r&aacute;pido al principio y lento al final, uniforme, etc).</p>
+                <p>Podemos emplear algunas caracter&iacute;sticas m&aacute;s, pero las fundamentales son&nbsp;<strong>name</strong>,&nbsp;<strong>duration&nbsp;</strong>e&nbsp;<strong>interaction-count</strong>.</p>
+                <p>&nbsp;</p>
+            </div>
+            <div id="panel_formularios" class="panel" hidden>
+                <h1>Formularos</h1>                
+                <p>Los formularios son un elemento en las paginas web que permiten recabar información para<br/> enviarla a un servidor de aplicaciones y que la procese. </p>
+                
+                <h2>1. Etiqueta Form</h2>	
+                        
+                        <p>Todo formulario HTML comienza con una etiqueta "form", dentro de ella se colocan todos los controles del formulario.</p>		        
+                        <p>La etiqueta form posee dos atributos:</p>
+                        <p>- Action. Es el atributo que contiene la URL de la página web</p>
+                        <p>- Method. Permite indicar qu&eacute; instrucci&oacute;n http utilizaremos para pasar la informaci&oacute;n al destino de nuestro formulario. Las opciones
+                        habituales son GET y POST.</p>
+                        <p>Ejemplo:</p>
+                        <p>&lt;form action="control_form.php" method="GET"&gt;</p>
+                
+                <h2>2. Cuadros de texto</h2>
+                        
+                        <p>Los cuadros de texto permiten recoger texto que escriba el usuario. El c&oacute;digo se realiza de la siguiente forma:</p>
+                        <p>&lt;input type="text" name="nombre" /&gt;</p>
+                        <p>Al introducir este c&oacute;digo, se abre un cuadro para que el usuario introduzca los datos. Adem&aacute;s este c&oacute;dgio puede tener diferentes atributos:</p>
+                        <p>- Value: Da un valor inicial al cuadro, se usa para indicar un texto de ayuda al relleno.</p>
+                        <p>- ID: Identificador del cuadro</p>
+                        <p>Ejemplo:</p>
+                        <p>&lt;form action=</p>
+                        <p>"control_form.php" method="get"&gt;Escriba su nombre y apellidos&lt;input type="text" name="nombre" /&gt;</p>
+                        <form action="control_form.php" method="get">Escriba su nombre y apellidos<input name="nombre" type="text" /></form>
+                        <p>Adem&aacute;s tenemos tres atributos mas:</p>
+                        <p>- Maxlength (Indica el m&aacute;ximo n&uacute;mero decaracteres que se le permitir&aacute; escribira la usuaria o usuario.)</p>
+                        <p>- Size (Anchura, en caracteres, del cuadro de texto.)</p>
+                        <p>- Value (Permite rellenar el cuadro con un texto inicial.)</p>
+                    
+                <h2>3. Cuadros de contrase&ntilde;a</h2>
+                        
+                        <p>Funcionan como los cuadros de texto, s&oacute;lo que el texto que se introduce se oculta,<br />mostrando s&oacute;lo puntos o asteriscos. Ejemplo:</p>
+                        <p>&lt;input type="password" name="nombre" /&gt;</p>
+                        <p><input name="nombre" type="password" /></p>
+                
+                <h2>4. Botones</h2>
+                        
+                        <p>Los botones son controles del formulario en los que no se puede escribir, lo que s&iacute;<br />permiten es cargar una imagen mediante su atributo src.&nbsp;</p>
+                        <p>- Bot&oacute;n de env&iacute;o, input type="submit": Sirve para llevar a cabo la comunicaci&oacute;n entre el formulario y la p&aacute;gina que recoge sus datos. Ejemplo:</p>
+                        <p>&lt;input type="submit" value="Enviar" /&gt;</p>
+                        <p><input type="submit" value="Enviar" /></p>
+                        <p>- Bot&oacute;n de restablecer, input type="reset":&nbsp;Este tipo de botones lo que hacen es anular los<br/> datos que se han introducidos en los controles del formulario. Deja todos los controles en su estado inicial. Ejemplo:</p>
+                        <p>&lt;input type="reset" value="Reset" /&gt;</p>
+                        <p><input type="reset" value="Reset" /></p>
+                        <p>- Bot&oacute;n gen&eacute;rico, input type="button":&nbsp;Un bot&oacute;n gen&eacute;rico se marca indicando type="button" en la etiqueta type.<br/> En los formularios no se usa para enviar o configurar la informaci&oacute;n, sino que se utiliza normalmente para capturar su pulsaci&oacute;n. Ejemplo:</p>
+                        <p>&lt;input type="button" name="Bot&oacute;n"/&gt;</p>
+                
+                <h2>5. Botones de radio</h2>
+                        
+                        <p>Se trata de un control f&aacute;cil de usar que permite elegir una de entre varias opciones.<br />Todas las opciones deben de tener el mismo nombre y s&oacute;lo cambia el valor de las<br />mismas. Ejemplo:</p>
+                        <p>&lt;form action="control_form.php" method="get"&gt;</p>
+                        <p>&lt;p&gt;Sexo:&lt;/p&gt;</p>
+                        <p>&lt;input type="radio" name="sexo" value="hombre"/&gt;Hombre&lt;/br&gt;</p>
+                        <p>&lt;input type="radio" name="sexo" value="mujer" checked="checked"/&gt;&lt;/br&gt;</p>
+                        <p>&lt;/form&gt;</p>
+                        <p>&nbsp;</p>
+                        <hr />
+                        <p>Sexo:</p>
+                        <p><input name="sexo" type="radio" value="hombre" />Hombre<br /> <input checked="checked" name="sexo" type="radio" value="mujer" />Mujer</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                
+                <h2>6. Casillas de verificaci&oacute;n</h2>
+                        
+                        <p>Se usan igual que los botones de radio, aunque no se recomienda agrupar varios con el<br />mismo nombre; no porque no se pueda, sino porque las casillas se asocian a valores que<br />se activan o desactivan.</p>
+                        <p>&lt;form action="control_form.php" method="get"&gt;</p>
+                        <p>&lt;p&gt;Sexo:&lt;/p&gt;</p>
+                        <p>&lt;input type="checkbox" name="sexo" value="hombre"/&gt;Hombre&lt;br/&gt;</p>
+                        <p>&lt;input type="checkbox" name="sexo" value="mujer"checked="checked"/&gt;Mujer&lt;br/&gt;</p>
+                        <p>Estado civil: Casado &lt;input type="checkbox" name="estadocivil" value="casado" checked="checked"/&gt;</p>
+                        <p>&lt;br /&gt;</p>
+                        <p>&lt;input type="submit" value="Enviar" /&gt;</p>
+                        <p>&lt;/form&gt;</p>
+                        <form action="control_form.php" method="get"><hr />
+                        <p>Sexo:</p>
+                        <p><input name="sexo" type="checkbox" value="hombre" />Hombre<br /> <input checked="checked" name="sexo" type="checkbox" value="mujer" />Mujer<br /> Estado civil: Casado <input checked="checked" name="estadocivil" type="checkbox" value="casado" /> <br /> <input type="submit" value="Enviar" /></p>
+                                
+                <h2>7. Cuadros combinados</h2>
+                        
+                        <p>Un cuadro combinado permite el uso de una lista de opciones en la que se puede elegir<br />la deseada.</p>
+                        <p>&lt;form action="control_form.php" method="get"&gt;</p>
+                        <p>&lt;select name="provincia"&gt;</p>
+                        <p>&lt;option value="av"&gt;Avila&lt;/option&gt;</p>
+                        <p>&lt;option value="bu"&gt;Burgos&lt;/option&gt;</p>
+                        <p>&lt;/select&gt;</p>
+                        <p>&lt;input type="submit" value="enviar"/&gt;</p>
+                        <p>&lt;/form&gt;</p>
+                        <hr />
+                        <p>&nbsp;</p>
+                        </form><form action="control_form.php" method="get"><select name="provincia">
+                        <option value="av">&Aacute;vila</option>
+                        <option value="bu">Burgos</option>
+                        <option value="l">Le&oacute;n</option>
+                        <option value="p">Palencia</option>
+                        <option value="sg">Segovia</option>
+                        <option value="so">Soria</option>
+                        <option value="sa">Salamanza</option>
+                        <option value="va">Valladolid</option>
+                        <option value="za">Zamora</option>
+                        </select>
+                        <p><input type="submit" value="enviar" /></p>
+                
+                <h2>8. Cuadro de seleccion de archivo</h2>
+                        
+                        <p>Cuando se usa type="file" en una etiqueta input, entonces aparece un bot&oacute;n que al<br />pulsarle hace aparecer un cuadro de selecci&oacute;n de archivos mediante el cual podremos<br />elegir un archivo.</p>
+                        <p>&lt;form action="recogida1.php" method="get"&gt;</p>
+                        <p>Elija el archivo</p>
+                        <p>&lt;input type="file" name="archivo" /&gt;</p>
+                        <p>&lt;input type="submit" value="enviar"/&gt;&lt;br/&gt;</p>
+                        <p>&lt;/form&gt;</p>
+                        <hr />
+                        <p>&nbsp;</p>
+                        </form><form action="recogida1.php" method="get">
+                        <p>Elija el archivo <input name="archivo" type="file" /> <input type="submit" value="enviar" /></p>
+                        <h2>9. Cuadro de texto multil&iacute;nea</h2>
+                        <p>La etiqueta textarea permite colocar un cuadro de texto de varias l&iacute;neas para que el<br />usuario puede introducir un texto largo.</p>
+                        <p>&lt;form action="control_form.php" method="get"&gt;</p>
+                        <p>Escribe un texto descriptivo:&lt;br/&gt;</p>
+                        <p>&lt;textarea rows="10" cols="40" name="texto"&gt;&lt;/textarea&gt;&lt;br /&gt;</p>
+                        <p>&lt;input type="submit" value="enviar"/&gt;&lt;br /&gt;</p>
+                        <p>&lt;/form&gt;</p>
+                        <hr />
+                        <p>&nbsp;</p>
+                        </form><form action="control_form.php" method="get">
+                        <p>Escribe un texto descriptivo: <br /> <textarea cols="40" name="texto" rows="10"></textarea><br /> <input type="submit" value="enviar" /></p>
+                        <p>&nbsp;</p>
+                
+                <h2>10. Agrupaci&oacute;n de controles, fieldset</h2>
+                        
+                        <p>La etiqueta fieldset permite agrupar controles para que visualmente sea m&aacute;s c&oacute;modo el<br />relleno de los controles.</p>
+                        <p>&lt;form action="control_form.php" method="get" &gt;</p>
+                        <p>&lt;fieldset&gt;</p>
+                        <p>&lt;legend&gt;Datos personales&lt;/legend&gt;</p>
+                        <p>&lt;input type="radio" name="sexo" value="hombre"/&gt;Hombre&lt;br /&gt;</p>
+                        <p>&lt;input type="radio" name="sexo" value="mujer" checked="checked"/&gt;Mujer&lt;br /&gt;</p>
+                        <p>Estado civil: Casado &lt;input type="checkbox" name="estadocivil" value="casado" checked="checked"/&gt;</p>
+                        <p>&lt;br /&gt;</p>
+                        <p>&lt;/fieldset&gt;</p>
+                        <p>&lt;input type="submit" value="Enviar" /&gt;</p>
+                        <p>&lt;/form&gt;</p>
+                        <hr />
+                        <p>&nbsp;</p>
+                        </form><form action="control_form.php" method="get"><fieldset><legend>Datos personales</legend> <input name="sexo" type="radio" value="hombre" />Hombre<br /> <input checked="checked" name="sexo" type="radio" value="mujer" />Mujer<br /> Estado civil: Casado <input checked="checked" name="estadocivil" type="checkbox" value="casado" /> </fieldset>
+                        <p><input type="submit" value="Enviar" /></p>
+                
+                <h2>11. Controles de HTML5</h2>
+                        
+                            <p>El nuevo est&aacute;ndar HTML ha mejorado notablemente los formularios gracias a nuevos<br />controles. La pega es que no todos los controles son soportados por los navegadores; hay<br />controles que algunos navegadores no permiten utilizar. cunado un navegador no<br />comprende un control HTML 5, suele traducirle como un cuadro de texto normal.</p>
+                                        
+                    <h3>11.1.Cuadros de texto especializados</h3>
+                        
+                            <p>La diferencia entre ellos es el uso del atributo type. Los buenos navegadores que<br />reconocen estos cuadros, var&iacute;an su uso para adaptarles a su funci&oacute;n y as&iacute; facilitar al<br />usuario la entrada de datos. De hecho los navegadores validan los datos y no les dejan<br />enviar hasta que sean correctos. Tenemos muchas posibilidades:</p>
+                            <p>- input type="number". Acepta s&oacute;lo n&uacute;meros. El navegador se asegura de no<br />aceptar texto. El atributo maxlength permite indicar un valor m&aacute;ximo para el<br />cuadro.</p>
+                            <p>- input type="email". Acepta s&oacute;lo direcciones de correo electr&oacute;nico.</p>
+                            <p>-&nbsp;input type="url". Acepta s&oacute;lo direcciones URL.</p>
+                            <p>-&nbsp;input type="date". Acepta s&oacute;lo fechas v&aacute;lidas. Usa el formato de fecha<br />configurado en el sistema operativo del usuario que visita la p&aacute;gina.</p>
+                            <p>-&nbsp;input type="time". Acepta s&oacute;lo horas v&aacute;lidas; funciona igual que el cuadro<br />anterior.</p>
+                            <p>-&nbsp;input type="datetime". Acepta fecha y hora.</p>
+                            <p>- input type="month". Acepta s&oacute;lo n&uacute;meros del 1 al 12, referidos a un mes.&nbsp;</p>
+                            <p>- input type="search". Presenta un cuadro de texto pensado para hacer<br />b&uacute;squedas.</p>
+                            <p>-&nbsp;input type="tel". Permite introducir n&uacute;meros de tel&eacute;fono</p>
+                            <p>-&nbsp;input type="range". Presenta un control para elegir datos entre un rango. Los<br />atributos max y min establecen el rango m&aacute;ximo y m&iacute;nimo del control.</p>
+                            <p>-&nbsp;input type="color". Presenta un control de selecci&oacute;n de colores. El color se<br />toma en formato #xxxxxx donde cada x es una cifra hexadecimal.</p>
+                        
+                    <h3>11.2.Etiquetado de controles</h3>
+                            
+                            <p>En lugar de poner la informaci&oacute;n de los controles poniendo texto directamente, se<br />recomienda usar la etiqueta label que utiliza un atributo for que sirve para asociar el<br />texto interno a la etiqueta label respecto al nombre del control que se indica con el<br />atributo for.</p>
+                            <p>Puede ser que no se entienda, pero con un ejemplo se entender&aacute; de una manera mas sencilla, esto se utiliza para tener mayor compatibilidad en los navegadores.Ejemplo:</p>
+                            <p>&lt;form action="control_form.php" method="get"&gt;</p>
+                            <p>&lt;label for="texto"&gt;Escribe un texto descriptivo:&lt;/label&gt;</p>
+                            <p>&lt;textarea rows="10" cols="40" name="texto"&gt;&lt;/textarea&gt;&lt;br /&gt;</p>
+                            <p>&lt;input type="submit" value="enviar"/&gt;&lt;br /&gt;</p>
+                            <p>&lt;/form&gt;</p>
+                            <hr />
+                            <p>&nbsp;</p>
+                            </form><form action="control_form.php" method="get">
+                            <p><label for="texto">Escribe un texto descriptivo:</label> <textarea cols="40" name="texto" rows="10"></textarea><br /> <input type="submit" value="enviar" /></p>
+                    
+                    <h3>11.3.Datalist</h3>
+                            
+                            <p>No hay muchos navegadores que acepten esta etiqueta, pero es muy potente permite<br />a&ntilde;adir entradas a un control de cuadro de texto (y tambi&eacute;n a cuadros especializados<br />como los de email, url,&hellip;.). La forma de usar consiste en usar el atributo HTML5 list<br />existente en la etiqueta input. Ese atributo asociar&aacute; el cuadro de texto a la lista de<br />valores. Luego dentro de datalist se colocan etiquetas option para cada opci&oacute;n en la<br />lista.</p>
+                            <p>&lt;form action="recogida.php" method="get"&gt;<br /> &lt;label for="gustos"&gt;<br /> Escribe en qu&eacute; te gusta pasar tu tiempo de ocio<br /> &lt;/label&gt;<br /> &lt;input type="text" id="gustos" name="gustos" list="listaGustos" /&gt;<br /> &lt;datalist id="listaGustos"&gt;<br /> &lt;option label="deportes" value="Deportes" /&gt;<br /> &lt;option label="teatro" value="Teatro" /&gt;<br /> &lt;option label="cine" value="Cine" /&gt;<br /> &lt;option label="leer" value="Leer" /&gt;<br /> &lt;/datalist&gt;<br /> &lt;input type="submit" value="enviar"/&gt;&lt;br /&gt;<br />&lt;/form&gt;</p>
+                            <hr />
+                            <p>&nbsp;</p>
+                            </form><form action="recogida.php" method="get"><label for="gustos"> Escribe en qu&eacute; te gusta pasar tu tiempo de ocio </label> <input id="gustos" list="listaGustos" name="gustos" type="text" />
+                            <datalist id="listaGustos">
+                            <option label="deportes" value="Deportes"></option>
+                            <option label="teatro" value="Teatro"></option>
+                            <option label="cine" value="Cine"></option>
+                            <option label="leer" value="Leer"></option>
+                            </datalist>
+                            <p><input type="submit" value="enviar" /></p>
+                            <p>&nbsp;</p>
+                            <p>Sin embargo esta forma no funciona en la mayor&iacute;a de navegadores y por ello se usa<br />un truco que hace que los navegadores no compatibles con HTML5 vean la lista como un<br />cuadro combinado y los compatibles como un cuadro de texto en el que se podr&iacute;a<br />escribir.</p>
+                            <p>&lt;form action="recogida.php" method="get"&gt;<br /> &lt;label for="gustos"&gt;<br /> Escribe en qu&eacute; te gusta pasar tu tiempo de ocio<br /> &lt;/label&gt;<br /> &lt;datalist id="listaGustos"&gt;<br /> &lt;select name="listaGustos"&gt;<br /> &lt;option value="deportes" &gt;Deportes&lt;/option&gt;<br /> &lt;option value="teatro" &gt;Teatro&lt;/option&gt;<br /> &lt;option value="cine" &gt;Cine&lt;/option&gt;<br /> &lt;option value="leer" &gt;Leer&lt;/option&gt;<br />&lt;/select&gt;<br />&lt;/datalist&gt;</p>
+                            <p>&lt;input id="gustos" name="gustos" list="listaGustos" /&gt;<br /> &lt;input type="submit" value="enviar"/&gt;&lt;br /&gt;<br />&lt;/form&gt;</p>
+                            <hr />
+                            <p>&nbsp;</p>
+                            </form><form action="recogida.php" method="get"><label for="gustos"> Escribe en qu&eacute; te gusta pasar tu tiempo de ocio </label>
+                            <datalist id="listaGustos"><select name="listaGustos">
+                            <option value="deportes">Deportes</option>
+                            <option value="teatro">Teatro</option>
+                            <option value="cine">Cine</option>
+                            <option value="leer">Leer</option>
+                            </select></datalist>
+                            <p><input id="gustos" list="listaGustos" name="gustos" type="text" /> <input type="submit" value="enviar" /></p>
+                            <p>El truco consiste en meter select dentro del datalist, los navegadores modernos<br />ignorar&aacute;n la etiqueta select y los viejos el datalist.</p>
+                                    
+                    <h3>11.4.Atributo required</h3>
+                            
+                            <p>Este atributo obliga a rellenar con alg&uacute;n valor el control en el que se usa. Es decir hace<br />que un determinado control sea de obligado rellenado en un formulario.</p>
+                            <p>&lt;input type="text" name="texto" id="texto" required /&gt;</p>
+                            <hr />
+                            <p><input id="texto" name="texto" required="" type="text" /></p>
+                
+                    <h3>11.5.Atributo multiple</h3>
+                            
+                            <p>Permite en los cuadros de entrada de texto que el usuario pueda indicar varios valores<br />si les separa con comas.</p>
+                
+                    <h3>11.6.Atributo pattern</h3>
+                            
+                            <p>Permite colocar una expresi&oacute;n regular en un cuadro de texto que, obligatoriamente,<br />tendr&aacute; que cumplir el cuadro en el que se use el atributo.</p>
+                            <p>&lt;form action="recogida1.php" method="get"&gt;<br /> &lt;label for="texto"&gt;<br /> Escribe el n&ordm; de serie (5 letras y tres n&uacute;meros)<br /> &lt;/label&gt;<br /> &lt;input type="text" pattern="[A-Z]{5}[0-9]{3}" id="gustos" name="texto"<br />/&gt;<br /> &lt;input type="submit" value="enviar"/&gt;&lt;br /&gt;<br />&lt;/form&gt;</p>
+                            <hr />
+                            <p>&nbsp;</p>
+                            </form><form action="recogida1.php" method="get">
+                            <p><label for="texto"> Escribe el n&ordm; de serie (5 letras y tres n&uacute;meros) </label> <input id="gustos" name="texto" pattern="[A-Z]{5}[0-9]{3}" type="text" /> <input type="submit" value="enviar" /></p>
+                                        
+                    <h3>11.7.Atributo autocomplete</h3>
+                            
+                            <p>Permite activar (valor on) o desactivar (valor off) el autocompletado del navegador. El<br />autocompletado es la opci&oacute;n que permite a los usuarios cuando rellenan un formulario<br />ver entradas habituales que han escrito en el mismo u otros formularios.</p>
+                    
+                    <h3>11.8.Atributo min,max y range</h3>
+                            
+                            <p>Son atributos que se pueden utilizar en muchos tipos de cuadros (number, date, time,<br />range,..) que almacenan valores num&eacute;ricos o similares. min y max establecen los<br />l&iacute;mites del cuadro.</p>
+                            <p>&nbsp;</p>
+            </div>
+            <div id="panel_enlaces" class="panel" hidden>
+                <h1>Enlaces</h1>                
+                <p>Para crear un enlace usamos la etiqueta &lt;a&gt; &lt;/a&gt; con el atributo <strong>href</strong> que determina el destino del enlace.</p>
+                <p>Ejemplo: pulsa en <a target="_blank" href="https://www.youtube.com/?hl=es&gl=ES">este texto</a> para ir a Youtube</p>
+                <hr/>
+                <h1>Enlaces Internos</h1>
+                <p>Sirve para saltar de una parte del documento a otra, dentro del mismo. Para ello es necesario:</p>
+                <ol type="1">
+                    <li>Se marca una posición en el documento usando cualquier etiqueta que no sea de cierre con el atributo <strong>id o name</strong> al
+                        que se le indica un identificador que servirá de marcador de la posición. <br/>
+                    Ejemplo: <a href="#Ejemplo">Ejemplo de enlace interno</a></li>
+                    <br/>
+                    <li>Ponemos el enlace donde deseemos e indicamos en el atributo <strong>href</strong> 
+                        el nombre del marcador indicado anteponiendo el simbolo (#). <br/>
+                    Ejemplo: <a id="Ejemplo">Ejemplo enlace interno</a>
+                    </li>
+                </ol> 
+                <hr/>
+                <h1>Enlaces Externos</h1>
+                <p>Cuando estamos creando una pagina y los archivos estan todos en la misma carpeta, en vez de usar la URL se usa el nombre del archivo que se desea arbir</p>
+                <p>Ejemplo: <a target="_blank" href="Tablas.html">Ejemplo enlace externo</a></p>
+                <p>Para abrir archivos que estan en una subcarpeta se hace de la siguiente manera</p>
+                <p>Ejemplo: <a target="_blank" href="index/index.html">Ejemplo Subcarpeta</a></p>
+                <hr/>
+                <h1>Atributos del Elemento a</h1>
+                <table border="1" cellpadding="5">
+        
+                    <tr>
+                        <th>ATRIBUTO</th>
+                        <th>SIGNIFICADO</th>
+                    </tr>
+                    <tr>
+                        <th>hreflang</th>
+                        <td>Indica el lenguaje en el que esta escrito el destino de enlace (es, fr, en,...).</td>
+                    </tr>
+                    <tr>
+                        <th>media</th>
+                        <td>Permite mostrar el medio idoneo para mostrar el contenido del enlace.</td>
+                    </tr>
+                    <tr>
+                        <th>target</th>
+                        <td>
+                            Indica como se muestra la pagina de destino.
+                            <ul>
+                                <li><strong>_blank</strong>:Abre el enlace en una nueva pagina</li>
+                                <br/>
+                                <li><strong>_parent</strong>:Abre el enlace en el marco de la página padre de ella</li>
+                                <br/>
+                                <li><strong>_top</strong>:Abre la página en el marco superior</li>
+                                <br/>
+                                <li><strong>_self</strong>:Abre la página en el marco actual</li>
+                                <br/>
+                                <li><strong>nombre</strong>:EL nombre indicado será el del marco en el que se abrirá la página</li>
+                                
+                            </ul>
+                            Excepto el primero, el resto apenas se usan por referirse a marcos.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>rel</th>
+                        <td>
+                            Informa sobre la funcion del enlace.
+                            <ul>
+                                <li><strong>alternate</strong>:Enlace alternativo</li>
+                                <br/>
+                                <li><strong>author</strong></li>
+                                <br/>
+                                <li><strong>bookmark</strong>:Página de marcadores</li>
+                                <br/>
+                                <li><strong>help</strong>:Página de ayuda</li>
+                                <br/>
+                                <li><strong>license</strong>:Información sobre la licencia</li>
+                                <br/>
+                                <li><strong>next</strong>:Si la pagina pertenece a una serie ordenada, el enlace nos llevara al siguiente elemento de la serie</li>
+                                <br/>
+                                <li><strong>nofollow</strong>:Marca que los robots de búsqueda de empresas como
+                                    Google no tengan en cuenta los enlaces externos y así evitar
+                                    que dichos enlaces en las páginas se utilicen para subir su
+                                    calificación en los buscadores. Así se ignoran por los robots los
+                                    enlaces marcados de esta forma.</li>
+                                <li><strong>noreferrer</strong>:Un referrer es la información relativa a la página
+                                    desde la que procede el visitante a un sitio. Con este valor se evita que se conozca la URL de procedencia del usuario</li>
+                                <br/>
+                                <li><strong>prefetch</strong>:Permite descargar el enlace antes de que el usuario
+                                    haga clic en él y así acelerar su carga.</li>
+                                <br/>
+                                <li><strong>prev</strong>:Si la pagina pertenece a una serie ordenada, el enlace nos llevara al anterior elemento de la serie</li>
+                                <br/>
+                                <li><strong>search</strong>:Página de búsqueda dentro de nuestro sitio web</li>
+                                <br/>
+                                <li><strong>tag</strong>:Página con etiquetas de temas (tags) de nuestro sitio web.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="panel_multimedia" class="panel" hidden>
+                <h1>Multimedia</h1>                
+                <p>Etiqueta ya casi obsoleta, utilizada para colocar en una página web
+                    elementos no pertenecientes al lenguaje HTML como animaciones Flash, vídeo, audio,
+                    etc.</p>
+                <table border="1" cellpadding="5">
+                    <tr>
+                        <th>atributo</th>
+                        <th>uso</th>
+                    </tr>
+                    <tr>
+                        <th>src</th>
+                        <td>URL al recurso que se desea mostrar</td>
+                    </tr>
+                    <tr>
+                        <th>type</th>
+                        <td>Tipo MIME que indica el contenido del recurso que se incorpora con la
+                            etiqueta</td>
+                    </tr>
+                    <tr>
+                        <th>height</th>
+                        <td>Altura de la ventana que mostrará el recurso</td>
+                    </tr>
+                    <tr>
+                        <th>width</th>
+                        <td>Anchura de la ventana que mostrará el recurso</td>
+                    </tr>
+                </table>
+                <h1>Etiqueta object</h1>
+                <p>Esta orientada a sustituir a la anterior  y permite incorporar todo tipo de contenido a una pagina web</p>
+                <table border="1" cellpadding="5">
+                    <tr>
+                        <th>atributo</th>
+                        <th>uso</th>
+                    </tr>
+                    <tr>
+                        <th>data</th>
+                        <td>URL al recurso que se desea mostrar</td>
+                    </tr>
+                    <tr>
+                        <th>type</th>
+                        <td>Tipo MIME que indica el contenido del recurso que se incorpora con la
+                            etiqueta. </td>
+                    </tr>
+                    <tr>
+                        <th>height</th>
+                        <td>Altura de la ventana que mostrará el recurso</td>
+                    </tr>
+                    <tr>
+                        <th>width</th>
+                        <td>Anchura de la ventana que mostrará el recurso</td>
+                    </tr>
+                    <tr>
+                        <th>usemap</th>
+                        <td>Permite indicar el nombre de un mapa de imagenes que actuara sobre el objeto</td>
+                    </tr>
+                    <tr>
+                        <th>name</th>
+                        <td>Permite indicar el nombre del objeto</td>
+                    </tr>
+                    <tr>
+                        <th>form</th>
+                        <td>Indica el nombre del formulario al que pertenece este objeto</td>
+                    </tr>
+                </table>
+                <h1>Elemento param</h1>
+                <p>Elemento interior a object, que permite especificar parámetros a los plugins de los
+                    navegadores encargados de mostrar el objeto.La forma es mediante los atributos <strong>name</strong> (en el que
+                    se indica el nombre del atributo) y <strong>value</strong>(valor del atributo)</p>
+                <p>Ejemplo:</p>
+                <p>&lt;object data="Wildlife.wmv" type="video/x-ms-wmv" width="500" height="300"&gt;
+                    <br/>
+                    &lt;param name="autoplay" value="true" /&gt;
+                   </object></p>
+                <p>En este caso el video se reproduciria automaticamente al cargar la página.</p>
+                <h1>Elemento inframe</h1>
+                <p>La idea es colocar un documento dentro de otro documento, es decir sirve para
+                        incrustar contenido de una dirección dentro de la página que le hace referencia.</p>
+                <table border="1" cellpadding="5">
+                    <tr>
+                        <th>atributo</th>
+                        <th>uso</th>
+                    </tr>
+                    <tr>
+                        <th>src</th>
+                        <td>URL al recurso que se desea mostrar</td>
+                    </tr>
+                    <tr>
+                        <th>width</th>
+                        <td>Anchura del objeto en nuestra página</td>
+                    </tr>
+                    <tr>
+                        <th>height</th>
+                        <td>Altura del objeto en nuestra página</td>
+                    </tr>
+                </table>
+                <h1>Elemento video</h1>
+                <p>Elemento propuesto por html5 para incorporar videos a una página web</p>
+                <table border="1" cellpadding="5">
+                    <tr>
+                        <th>atrbuto</th>
+                        <th>uso</th>
+                    </tr>
+                    <tr>
+                        <th>src</th>
+                        <td>URL al vídeo que se desea mostrar</td>
+                    </tr>
+                    <tr>
+                        <th>width</th>
+                        <td>Anchura del vídeo en nuestra página</td>
+                    </tr>
+                    <tr>
+                        <th>height</th>
+                        <td>Altura del vídeo en nuestra página</td>
+                    </tr>
+                    <tr>
+                        <th>autoplay</th>
+                        <td>Indica que el vídeo se inicia
+                                automáticamente en cuanto se descargue</td>
+                    </tr>
+                    <tr>
+                        <th>loop</th>
+                        <td>Indica que el vídeo se ejecuta
+                                automáticamente una y otra vez</td>
+                    </tr>
+                    <tr>
+                        <th>controls</th>
+                        <td>Indica que el vídeo mostrará los controles de
+                                reproducción (pausa, play,…)</td>
+                    </tr>
+                    <tr>
+                        <th>preload</th>
+                        <td>
+                            Recomendación sobre cómo debemos realizar la descarga.
+                            <ul>
+                                <li><strong>auto</strong>:El video se descarga en cuanto carga la página</li>
+                                <li><strong>none</strong>:El video se descarga cuando el usuario pulse play</li>
+                                <li><strong>metadata</strong>:Descarga los metadatos del video, no el video en si</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>poster</th>
+                        <td>Permite indicar la dirección URL a una imagen que se mostrará
+                                mientras el vídeo no se está reproduciendo.<br/> Si no se usa este
+                                atributo, se usa el primer fotograma del vídeo como póster</td>
+                    </tr>
+                </table>
+                <br/>
+                <h2>Codecs de video. Elemento source</h2>
+                <p>Se denomina codec, al software que se usa para crear los videos. Un vídeo actual usa un formato comprimido de datos, por lo que para crearlos se
+                        codifican los datos y para mostrarle, se descodifica.</p>
+                <p>Eso significa que para ver un vídeo en un formato concreto, se necesita el códec
+                        apropiado, y cada navegador incorpora unos codecs, pero html5 ha conseguido solucionar este problema con la etiqueta <strong>source.</strong></p>
+                <p>El elemento source se compone de dos atributos, <strong>src</strong> que sirve para indicar la URL que nos lleva al video y
+                <strong>type</strong>, que indica el tipo MIME del vídeo</p>
+                <p>La idea es que si el primer formato no se reconoce (primer elemento
+                        source), se intenta el segundo y así sucesivamente. Si ninguno es reproducible por el
+                        navegador actual, éste mostrará la frase final tras el último source.</p>
+                <p>Ejemplo:</p>
+        
+                <video controls="controls" height="600" widght="800" poster="descarga.jpg">
+                    <source src="NS 003 - Los Resultados del Entrenamiento.mp4" type="video/mp4"/>
+                    El navegador no puede mostrar el video
+                </video>
+        
+                <h2>Subtitulos</h2>
+                <p>Aunque los navegadores actuales no permiten esta opción, ya que se realiza con JavaScript, hay una etiqueta que se coloca dentro del elemento <strong>video</strong> llamada <strong>track</strong></p>
+                <table border="1" cellpadding="5">
+                    <tr>
+                        <th>atributo</th>
+                        <th>uso</th>
+                    </tr>
+                    <tr>
+                        <th>src</th>
+                        <td>URL al archivo VTT o SRT que contiene los subtítulos</td>
+                    </tr>
+                    <tr>
+                        <th>kind</th>
+                        <td>
+                            Tipo de Subtitulos
+                            <ul>
+                                <li><strong>subtitles</strong>:Subtitulos normales</li>
+                                <li><strong>captions</strong>:Igual que el anterior pero con posibilidad de añadir
+                                    sonidos</li>
+                                <li><strong>descriptions</strong>:Texto alternativo e indepenidiente de la pelicula</li>
+                                <li><strong>chapters</strong>:Contiene los capítulos que permiten navegar de forma
+                                    ágil por la película</li>
+                                <li><strong>metadata</strong>:Metadatos del video</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>label</th>
+                        <td>Nombre de los subtítulos para reconocerlos en caso de haber indicado
+                                varios</td>
+                    </tr>
+                    <tr>
+                        <th>srclang</th>
+                        <td>Idioma de los subtitulos</td>
+                    </tr>
+                </table>
+                <h1>Elemento audio</h1>
+                <p>Elemento propuesto por html5 para incorporar audios a una página web</p>
+                <table border="1" cellpadding="5">
+                    <tr>
+                        <th>atributo</th>
+                        <th>uso</th>
+                    </tr>
+                    <tr>
+                        <th>src</th>
+                        <td>URL al vídeo que se desea mostrar</td>
+                    </tr>
+                    <tr>
+                        <th>autoplay</th>
+                        <td>Indica que el audio se inicia automáticamente en cuanto se descargue</td>
+                    </tr>
+                    <tr>
+                        <th>loop</th>
+                        <td>Indica que el audio se ejecuta automáticamente una y otra vez</td>
+                    </tr>
+                    <tr>
+                        <th>controls</th>
+                        <td>Indica que el audio mostrará los controles de reproducción (pausa, play,…)</td>
+                    </tr>
+                    <tr>
+                        <th>preload</th>
+                        <td>
+                            Recomendación sobre cómo debemos realizar la descarga.
+                                <ul>
+                                    <li><strong>auto</strong>:El audio se descarga en cuanto carga la página</li>
+                                    <li><strong>none</strong>:El audio se descarga cuando el usuario pulse play</li>
+                                    <li><strong>metadata</strong>:Descarga los metadatos del audio, no el video en si</li>
+                                </ul>
+                            </td>
+                    </tr>
+                </table>
+                <p>Con el audio existe el mismo problema que con los codecs del video, pero se soluciona de la misma forma</p>
+                <p>Ejemplo:</p>
+        
+                <audio controls="controls">
+                    <source src="DANI - WARRIORS.mp3" type="audio/mp3">
+                        No se puede reproducir el archivo de audio
+                </audio>
+            </div>
+            <div id="panel_canvas" class="panel" hidden>
+                <h1>Canvas</h1>                
+                <h1>&lt;canvas&gt;</h1>
+                <hr/>
+                <p><b>La etiqueta &lt;canvas&gt; se utiliza para crear un contenedor de graficos, tanto en 2D como en 3D, pero para poder usar esos graficos se necesitan scripts</b></p>   
+                <hr/>
+                <p><b>Veamos como se haría uno de los ejemplos de <a href="https://www.w3schools.com/tags/tag_link.asp">w3schools.com</a></b></p>
+                <hr/>
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+                   Your browser does not support the HTML5 canvas tag.</canvas>
+           
+               <script>
+               var c = document.getElementById("myCanvas");
+               var ctx = c.getContext("2d");
+               // Create gradient
+               var grd = ctx.createLinearGradient(0,0,200,0);
+               grd.addColorStop(0,"red");
+               grd.addColorStop(1,"white");
+               // Fill with gradient
+               ctx.fillStyle = grd;
+               ctx.fillRect(10,10,150,80);
+               </script>
+                <hr/>
+               <pre>
+                   &lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;"&gt;
+                   Your browser does not support the HTML5 canvas tag.&lt;/canvas&gt;
+           
+                   &lt;script&gt;
+                   var c = document.getElementById("myCanvas");
+                   var ctx = c.getContext("2d");
+                   // Create gradient
+                   var grd = ctx.createLinearGradient(0,0,200,0);
+                   grd.addColorStop(0,"red");
+                   grd.addColorStop(1,"white");
+                   // Fill with gradient
+                   ctx.fillStyle = grd;
+                   ctx.fillRect(10,10,150,80);
+                   &lt;/script&gt;
+               </pre>
+                <hr/>
+                <p><b>Se suele utilizar javascript para poder darle vida</b></p>   
+                <hr/>
+            </div>
+
+            <!--Paneles para accesibilidad-->
+            <div id="panel_wcag" class="panel" hidden>
+                <h1>WCAG 2.0</h1>
+                <hr/>
+                <p><b>Para que pueda ser accesible nuestra pagina debe ser:</b></p>
+               <hr/>
+                <h2>Perceptible</h2>
+                <p><b>-Proporcionar texto alternativo</b></p>
+                <p><b>-Proporcionar diferentes alternativas multimedia</b></p>
+                <p><b>-Crear contenido que se pueda representar de diferentes maneras</b></p>
+                <p><b>-Hacer un contenido fácil de leer y escuchar</b></p>
+                <hr/>
+                <h2>Operable</h2>
+                <p><b>-Todas las funciones deben ser accesibles desde el teclado</b></p>
+                <p><b>-Dar a usuario tiempo suficiente para usar el contenido</b></p>
+                <p><b>-Ayudar a los usuarios a navegar por el contenido</b></p>
+                <hr/>
+                <h2>Entendible</h2>
+                <p><b>-Texto legible y facil de comprender</b></p>
+                <p><b>-Hacer que e contenido sea previsible</b></p>
+                <p><b>-Ayudar al usuario a evitar y corregir errores</b></p>
+                <hr/>
+                <h2>Robusta</h2>
+                 <p><b>-Hacer que sea compatible con las mayoria de herramientas</b></p>
+                <hr/>
+           
+            </div>
+            <div id="panel_nucleo" class="panel" hidden>
+                <h2>1.&iquest;Qu&eacute; es la Accesibilidad Web?</h2>
+                <p>Hablar de Accesibilidad Web es hablar de un acceso universal a la Web, independientemente del tipo de hardware, software, infraestructura de red, idioma, cultura, localizaci&oacute;n geogr&aacute;fica y capacidades de los usuarios.</p>
+                <p>Con esta idea de accesibilidad nace la Iniciativa de Accesibilidad Web, conocida como WAI (Web Accessibility Initiative). Se trata de una actividad desarrollada por el W3C, cuyo objetivo es facilitar el acceso de las personas con discapacidad, desarrollando pautas de accesibilidad, mejorando las herramientas para la evaluaci&oacute;n y reparaci&oacute;n de accesibilidad Web, llevando a cabo una labor educativa y de concienciaci&oacute;n en relaci&oacute;n a la importancia del dise&ntilde;o accesible de p&aacute;ginas Web, y abriendo nuevos campos en accesibilidad a trav&eacute;s de la investigaci&oacute;n en este &aacute;rea.</p>
+    
+             <h2>1.1.&iquest;Para qu&eacute; sirve?</h2>
+                <p>La idea principal radica en hacer la Web m&aacute;s accesible para todos los usuarios independientemente de las circunstancias y los dispositivos involucrados a la hora de acceder a la informaci&oacute;n. Partiendo de esta idea, una p&aacute;gina accesible lo ser&iacute;a tanto para una persona con discapacidad, como para cualquier otra persona que se encuentre bajo circunstancias externas que dificulten su acceso a la informaci&oacute;n (en caso de ruidos externos, en situaciones donde nuestra atenci&oacute;n visual y auditiva no est&aacute;n disponibles, pantallas con visibilidad reducida, etc.).</p>
+    
+             <h2>1.2.&iquest;C&oacute;mo funciona?</h2>
+                <p>Para hacer el contenido Web accesible, se han desarrollado las denominadas Pautas de Accesibilidad al Contenido en la Web (WCAG), cuya funci&oacute;n principal es guiar el dise&ntilde;o de p&aacute;ginas Web hacia un dise&ntilde;o accesible, reduciendo de esta forma barreras a la informaci&oacute;n. WCAG consiste en 14 pautas que proporcionan soluciones de dise&ntilde;o y que utilizan como ejemplo situaciones comunes en las que el dise&ntilde;o de una p&aacute;gina puede producir problemas de acceso a la informaci&oacute;n. Las Pautas contienen adem&aacute;s una serie de puntos de verificaci&oacute;n que ayudan a detectar posibles errores.</p>
+                <p>Cada punto de verificaci&oacute;n est&aacute; asignado a uno de los tres niveles de prioridad establecidos por las pautas.</p>
+                <p>Prioridad 1: son aquellos puntos que un desarrollador Web tiene que cumplir ya que, de otra manera, ciertos grupos de usuarios no podr&iacute;an acceder a la informaci&oacute;n del sitio Web.<br />Prioridad 2: son aquellos puntos que un desarrollador Web deber&iacute;a cumplir ya que, si no fuese as&iacute;, ser&iacute;a muy dif&iacute;cil acceder a la informaci&oacute;n para ciertos grupos de usuarios.<br />Prioridad 3: son aquellos puntos que un desarrollador Web deber&iacute;a cumplir ya que, de otra forma, algunos usuarios experimentar&iacute;an ciertas dificultades para acceder a la informaci&oacute;n.<br />En funci&oacute;n a estos puntos de verificaci&oacute;n se establecen los niveles de conformidad:</p>
+                <p>- Nivel de Conformidad "A": todos los puntos de verificaci&oacute;n de prioridad 1 se satisfacen.<br />- Nivel de Conformidad "Doble A": todos los puntos de verificaci&oacute;n de prioridad 1 y 2 se satisfacen.<br />- Nivel de Conformidad "Triple A": todos los puntos de verificaci&oacute;n de prioridad 1,2 y 3 se satisfacen.</p>
+                <p>Las pautas describen c&oacute;mo hacer p&aacute;ginas Web accesibles sin sacrificar el dise&ntilde;o, ofreciendo esa flexibilidad que es necesaria para que la informaci&oacute;n sea accesible bajo diferentes situaciones y proporcionando m&eacute;todos que permiten su transformaci&oacute;n en p&aacute;ginas &uacute;tiles e inteligibles.</p>
+                <p>Igualmente, se han desarrollado Pautas de Accesibilidad para Herramientas de Autor, cuyo objetivo es ayudar a los desarrolladores de software a la hora de crear herramientas de autor para producir contenido Web accesible. Tambi&eacute;n se han desarrollado Pautas de Accesibilidad para XML , donde se explica c&oacute;mo asegurar la accesibilidad de aplicaciones basadas en XML. Y por &uacute;ltimo, Pautas de Accesibilidad para Agentes de Usuario 1.0, donde se explica c&oacute;mo hacer accesible los navegadores, reproductores multimedia y otras tecnolog&iacute;as asistivas.</p>
+                <p>Criterios de conformidad de nivel A (25 criterios)<br />Criterios de conformidad de nivel AA (13 criterios)<br />Criterios de conformidad de nivel AAA (23 criterios)</p>
+
+             <h2>2.Criterios de conformidad de nivel A</h2>
+                <p><strong>Contenido no textual</strong><br />Todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el mismo prop&oacute;sito, excepto en las situaciones enumeradas a continuaci&oacute;n.</p>
+                
+                <p><strong>S&oacute;lo audio y s&oacute;lo v&iacute;deo (grabado)</strong><br />Para contenido s&oacute;lo audio grabado y contenido s&oacute;lo v&iacute;deo grabado, se cumple lo siguiente, excepto cuando el audio o el v&iacute;deo es un contenido multimedia alternativo al texto y est&aacute; claramente identificado como tal:<br />S&oacute;lo audio grabado: Se proporciona una alternativa para los medios tempodependientes que presenta informaci&oacute;n equivalente para el contenido s&oacute;lo audio grabado.<br />S&oacute;lo v&iacute;deo grabado: Se proporciona una alternativa para los medios tempodependientes o se proporciona una pista sonora que presenta informaci&oacute;n equivalente al contenido del medio de s&oacute;lo v&iacute;deo grabado.</p>
+                
+                <p><strong>Subt&iacute;tulos (grabados)</strong><br />Se proporcionan subt&iacute;tulos para el contenido de audio grabado dentro de contenido multimedia sincronizado, excepto cuando la presentaci&oacute;n es un contenido multimedia alternativo al texto y est&aacute; claramente identificado como tal.</p>
+                
+                <p><strong>Audiodescripci&oacute;n o Medio Alternativo (grabado)</strong><br />Se proporciona una alternativa para los medios tempodependientes o una audiodescripci&oacute;n para el contenido de v&iacute;deo grabado en los multimedia sincronizados, excepto cuando ese contenido es un contenido multimedia alternativo al texto y est&aacute; claramente identificado como tal.</p>
+                
+                <p><strong>Informaci&oacute;n y relaciones</strong><br />La informaci&oacute;n, estructura y relaciones comunicadas a trav&eacute;s de la presentaci&oacute;n pueden ser determinadas por software o est&aacute;n disponibles como texto.</p>
+                
+                <p><strong>Secuencia significativa</strong><br />Cuando la secuencia en que se presenta el contenido afecta a su significado, se puede determinar por software la secuencia correcta de lectura.</p>
+                
+                <p><strong>Caracter&iacute;sticas sensoriales</strong><br />Las instrucciones proporcionadas para entender y operar el contenido no dependen exclusivamente en las caracter&iacute;sticas sensoriales de los componentes como su forma, tama&ntilde;o, ubicaci&oacute;n visual, orientaci&oacute;n o sonido.</p>
+                
+                <p><strong>Uso del color</strong><br />El color no se usa como &uacute;nico medio visual para transmitir la informaci&oacute;n, indicar una acci&oacute;n, solicitar una respuesta o distinguir un elemento visual.</p>
+                
+                <p><strong>Control del audio</strong><br />Si el audio de una p&aacute;gina web suena autom&aacute;ticamente durante m&aacute;s de 3 segundos, se proporciona ya sea un mecanismo para pausar o detener el audio, o un mecanismo para controlar el volumen del sonido que es independiente del nivel de volumen global del sistema.</p>
+                
+                <p><strong>Teclado</strong><br />Toda la funcionalidad del contenido es operable a trav&eacute;s de una interfaz de teclado sin que se requiera una determinada velocidad para cada pulsaci&oacute;n individual de las teclas, excepto cuando la funci&oacute;n interna requiere de una entrada que depende del trayecto de los movimientos del usuario y no s&oacute;lo de los puntos inicial y final.</p>
+                
+                <p><strong>Sin trampas para el foco del teclado</strong><br />Si es posible mover el foco a un componente de la p&aacute;gina usando una interfaz de teclado, entonces el foco se puede quitar de ese componente usando s&oacute;lo la interfaz de teclado y, si se requiere algo m&aacute;s que las teclas de direcci&oacute;n o de tabulaci&oacute;n, se informa al usuario el m&eacute;todo apropiado para mover el foco.</p>
+                
+                <p><strong>Tiempo ajustable</strong><br />Para cada l&iacute;mite de tiempo impuesto por el contenido, se cumple al menos uno de los siguientes casos:<br />Apagar: El usuario puede detener el l&iacute;mite de tiempo antes de alcanzar el l&iacute;mite de tiempo; o<br />Ajustar: El usuario puede ajustar el l&iacute;mite de tiempo antes de alcanzar dicho l&iacute;mite en un rango amplio que es, al menos, diez veces mayor al tiempo fijado originalmente; o<br />Extender: Se advierte al usuario antes de que el tiempo expire y se le conceden al menos 20 segundos para extender el l&iacute;mite temporal con una acci&oacute;n simple (por ejemplo, "presione la barra de espacio") y el usuario puede extender ese l&iacute;mite de tiempo al menos diez veces; o<br />Excepci&oacute;n de tiempo real: El l&iacute;mite de tiempo es un requisito que forma parte de un evento en tiempo real (por ejemplo, una subasta) y no resulta posible ofrecer una alternativa al l&iacute;mite de tiempo; o<br />Excepci&oacute;n por ser esencial: El l&iacute;mite de tiempo es esencial y, si se extendiera, invalidar&iacute;a la actividad; o<br />Excepci&oacute;n de 20 horas: El l&iacute;mite de tiempo es mayor a 20 horas.</p>
+                
+                <p><strong>Poner en pausa, detener, ocultar</strong><br />Para la informaci&oacute;n que tiene movimiento, parpadeo, se desplaza o se actualiza autom&aacute;ticamente, se cumplen todos los casos siguientes:<br />Movimiento, parpadeo, desplazamiento: Para toda informaci&oacute;n que se mueve, parpadea o se desplaza, que (1) comienza autom&aacute;ticamente, (2) dura m&aacute;s de cinco segundos y (3) se presenta en paralelo con otro contenido, existe un mecanismo para que el usuario la pueda poner en pausa, detener u ocultar, a menos que el movimiento, parpadeo o desplazamiento sea parte esencial de una actividad; y<br />Actualizaci&oacute;n autom&aacute;tica: Para toda informaci&oacute;n que se actualiza autom&aacute;ticamente, que (1) se inicia autom&aacute;ticamente y (2) se presenta en paralelo con otro contenido, existe un mecanismo para que el usuario la pueda poner en pausa, detener u ocultar, o controlar la frecuencia de actualizaci&oacute;n a menos que la actualizaci&oacute;n autom&aacute;tica sea parte esencial de una actividad.</p>
+                
+                <p><strong>Umbral de tres destellos o menos</strong><br />Las p&aacute;ginas web no contienen nada que destelle m&aacute;s de tres veces en un segundo, o el destello est&aacute; por debajo del umbral de destello general y de destello rojo.</p>
+                
+                <p><strong>Evitar bloques</strong><br />Existe un mecanismo para evitar los bloques de contenido que se repiten en m&uacute;ltiples p&aacute;ginas web.</p>
+                
+                <p><strong>Titulado de p&aacute;ginas</strong><br />Las p&aacute;ginas web tienen t&iacute;tulos que describen su tem&aacute;tica o prop&oacute;sito.</p>
+                
+                <p><strong>Orden del foco</strong><br />Si se puede navegar secuencialmente por una p&aacute;gina web y la secuencia de navegaci&oacute;n afecta su significado o su operaci&oacute;n, los componentes que pueden recibir el foco lo hacen en un orden que preserva su significado y operabilidad.</p>
+                
+                <p><strong>Prop&oacute;sito de los enlaces (en contexto)</strong><br />El prop&oacute;sito de cada enlace puede ser determinado con s&oacute;lo el texto del enlace o a trav&eacute;s del texto del enlace sumado al contexto del enlace determinado por software, excepto cuando el prop&oacute;sito del enlace resultara ambiguo para los usuarios en general.</p>
+                
+                <p><strong>Idioma de la p&aacute;gina</strong><br />El idioma predeterminado de cada p&aacute;gina web puede ser determinado por software.</p>
+                
+                <p><strong>Al recibir el foco</strong><br />Cuando cualquier componente recibe el foco, no inicia ning&uacute;n cambio en el contexto.</p>
+                
+                <p><strong>Al recibir entradas</strong><br />El cambio de estado en cualquier componente de la interfaz de usuario no provoca autom&aacute;ticamente un cambio en el contexto a menos que el usuario haya sido advertido de ese comportamiento antes de usar el componente.</p>
+                
+                <p><strong>Identificaci&oacute;n de errores</strong><br />Si se detecta autom&aacute;ticamente un error en la entrada de datos, el elemento err&oacute;neo es identificado y el error se describe al usuario mediante un texto.</p>
+                
+                <p><strong>Etiquetas o instrucciones</strong><br />Se proporcionan etiquetas o instrucciones cuando el contenido requiere la introducci&oacute;n de datos por parte del usuario.</p>
+                
+                <p><strong>Procesamiento</strong><br />En los contenidos implementados mediante el uso de lenguajes de marcas, los elementos tienen las etiquetas de apertura y cierre completas; los elementos est&aacute;n anidados de acuerdo a sus especificaciones; los elementos no contienen atributos duplicados y los ID son &uacute;nicos, excepto cuando las especificaciones permitan estas caracter&iacute;sticas.</p>
+                
+                <p><strong>Nombre, funci&oacute;n, valor</strong><br />Para todos los componentes de la interfaz de usuario (incluyendo pero no limitado a: elementos de formulario, enlaces y componentes generados por scripts), el nombre y la funci&oacute;n pueden ser determinados por software; los estados, propiedades y valores que pueden ser asignados por el usuario pueden ser especificados por software; y los cambios en estos elementos se encuentran disponibles para su consulta por las aplicaciones de usuario, incluyendo las ayudas t&eacute;cnicas.</p>
+
+             <h2>3.Criterios de conformidad de nivel AA</h2>
+                <p><strong>Subt&iacute;tulos (en directo)</strong></p>
+                <p>Se proporcionan subt&iacute;tulos para todo el contenido de audio en directo de los multimedia sincronizados.1.2.5 Audiodescripci&oacute;n (grabado)Se proporciona una audiodescripci&oacute;n para todo el contenido de v&iacute;deo grabado dentro de contenido multimedia sincronizado.1.4.3 Contraste (m&iacute;nimo)La presentaci&oacute;n visual de texto e im&aacute;genes de texto tiene una relaci&oacute;n de contraste de, al menos, 4.5:1, excepto en los siguientes casos:</p>
+                <ul>
+                <li>Textos grandes: Los textos de gran tama&ntilde;o y las im&aacute;genes de texto de gran tama&ntilde;o tienen una relaci&oacute;n de contraste de, al menos, 3:1.</li>
+                <li>Incidental: Los textos o im&aacute;genes de texto que forman parte de un componente inactivo de la interfaz de usuario, que son simple decoraci&oacute;n, que no resultan visibles para nadie o forman parte de una imagen que contiene otros elementos visuales significativos, no tienen requisitos de contraste.</li>
+                <li>Logotipos: El texto que forma parte de un logo o nombre de marca no tiene requisitos de contraste m&iacute;nimo.</li>
+                </ul>
+                
+                <p><strong>Cambio de tama&ntilde;o del texto</strong></p>
+                <p>A excepci&oacute;n de los subt&iacute;tulos y las im&aacute;genes de texto, todo el texto puede ser ajustado sin ayudas t&eacute;cnicas hasta un 200 por ciento sin que se pierdan el contenido o la funcionalidad.1.4.5 Im&aacute;genes de textoSi con las tecnolog&iacute;as que se est&aacute;n utilizando se puede conseguir la presentaci&oacute;n visual deseada, se utiliza texto para transmitir la informaci&oacute;n en vez de im&aacute;genes de texto, excepto en los siguientes casos:</p>
+                <ul>
+                <li>Configurable: La imagen de texto es visualmente configurable seg&uacute;n los requisitos del usuario.</li>
+                <li>Esencial: Una forma particular de presentaci&oacute;n del texto resulta esencial para la informaci&oacute;n que se transmite.</li>
+                </ul>
+                
+                <p><strong>M&uacute;ltiples v&iacute;as</strong></p>
+                <p>Se proporciona m&aacute;s de un camino para localizar una p&aacute;gina web dentro de un conjunto de p&aacute;ginas web, excepto cuando la p&aacute;gina es el resultado, o un paso intermedio, de un proceso.</p>
+                
+                <p><strong>Encabezados y etiquetas</strong></p>
+                <p>Los encabezados y etiquetas describen el tema o prop&oacute;sito.</p>
+                
+                <p><strong>Foco visible</strong></p>
+                <p>Cualquier interfaz de usuario operable por teclado tiene una forma de operar en la cu&aacute;l el indicador del foco del teclado resulta visible.</p>
+                
+                <p><strong>Idioma de las partes</strong></p>
+                <p>El idioma de cada pasaje o frase en el contenido puede ser determinado por software, excepto los nombres propios, t&eacute;rminos t&eacute;cnicos, palabras en un idioma indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las rodea.</p>
+                
+                <p><strong>Navegaci&oacute;n coherente</strong></p>
+                <p>Los mecanismos de navegaci&oacute;n que se repiten en m&uacute;ltiples p&aacute;ginas web dentro de un conjunto de p&aacute;ginas web aparecen siempre en el mismo orden relativo cada vez que se repiten, a menos que el cambio sea provocado por el propio usuario.</p>
+                
+                <p><strong>Identificaci&oacute;n coherente</strong></p>
+                <p>Los componentes que tienen la misma funcionalidad dentro de un conjunto de p&aacute;ginas web son identificados de manera coherente.</p>
+                
+                <p><strong>Sugerencias ante errores</strong></p>
+                <p>Si se detecta autom&aacute;ticamente un error en la entrada de datos y se dispone de sugerencias para hacer la correcci&oacute;n, entonces se presentan las sugerencias al usuario, a menos que esto ponga en riesgo la seguridad o el prop&oacute;sito del contenido.</p>
+                
+                <p><strong>Prevenci&oacute;n de errores (legales, financieros, datos)</strong></p>
+                <p>Para las p&aacute;ginas web que representan para el usuario compromisos legales o transacciones financieras; que modifican o eliminan datos controlables por el usuario en sistemas de almacenamiento de datos; o que env&iacute;an las respuestas del usuario a una prueba, se cumple al menos uno de los siguientes casos:</p>
+                <ol>
+                <li>Reversible: El env&iacute;o es reversible.</li>
+                <li>Revisado: Se verifica la informaci&oacute;n para detectar errores en la entrada de datos y se proporciona al usuario una oportunidad de corregirlos.</li>
+                <li>Confirmado: Se proporciona un mecanismo para revisar, confirmar y corregir la informaci&oacute;n antes de finalizar el env&iacute;o de los datos.</li>
+                </ol>
+
+             <h2>4.Criterios de conformidad de nivel AAA</h2>
+                <p><strong>Lengua de se&ntilde;as (grabado)</strong></p>
+                <p>Se proporciona una interpretaci&oacute;n en lengua de se&ntilde;as para todo el contenido de audio grabado dentro de contenido multimedia sincronizado.</p>
+                
+                <p><strong>Audiodescripci&oacute;n ampliada (grabada)</strong></p>
+                <p>Cuando las pausas en el audio de primer plano son insuficientes para permitir que la audiodescripci&oacute;n comunique el significado del v&iacute;deo, se proporciona una audiodescripci&oacute;n ampliada para todos los contenidos de v&iacute;deo grabado dentro de contenido multimedia sincronizado.</p>
+                
+                <p><strong>Medio alternativo (grabado)</strong></p>
+                <p>Se proporciona una alternativa para los medios tempodependientes, tanto para todos los contenidos multimedia sincronizados grabados como para todos los medios de s&oacute;lo v&iacute;deo grabado.</p>
+                
+                <p><strong>S&oacute;lo audio (en directo)</strong></p>
+                <p>Se proporciona una alternativa para los medios tempodependientes que presenta informaci&oacute;n equivalente para el contenido de s&oacute;lo audio en directo.</p>
+                
+                <p><strong>Contraste (mejorado)</strong></p>
+                <p>La presentaci&oacute;n visual de texto e im&aacute;genes de texto tiene una relaci&oacute;n de contraste de, al menos, 7:1, excepto en los siguientes casos:</p>
+                <ul>
+                <li>Textos grandes: Los textos de gran tama&ntilde;o y las im&aacute;genes de texto de gran tama&ntilde;o tienen una relaci&oacute;n de contraste de, al menos, 4.5:1.</li>
+                <li>Incidental: Los textos o im&aacute;genes de texto que forman parte de un componente de la interfaz de usuario inactivo, que son simple decoraci&oacute;n, que no resultan visibles para nadie o forman parte de una imagen que contiene otros elementos visuales significativos, no tienen requisitos de contraste.</li>
+                <li>Logotipos: El texto que forma parte de un logo o nombre de marca no tiene requisitos de contraste m&iacute;nimo.</li>
+                </ul>
+                
+                <p><strong>Sonido de fondo bajo o ausente</strong></p>
+                <p>Para el contenido de s&oacute;lo audio grabado que (1) contiene habla en primer plano, (2) no es un CAPTCHA sonoro o un audiologo, y (3) que no es una vocalizaci&oacute;n cuya intenci&oacute;n principal es servir como expresi&oacute;n musical (como el canto o el rap), se cumple al menos uno de los siguientes casos:</p>
+                <ul>
+                <li>Ning&uacute;n sonido de fondo: El audio no contiene sonidos de fondo.</li>
+                <li>Apagar: Los sonidos de fondo pueden ser apagados.</li>
+                <li>20 dB: Los sonidos de fondo son, al menos, 20 decibelios m&aacute;s bajos que el discurso en primer plano, con la excepci&oacute;n de sonidos ocasionales que duran solamente uno o dos segundos.</li>
+                </ul>
+                
+                <p><strong>Presentaci&oacute;n visual</strong></p>
+                <p>En la presentaci&oacute;n visual de bloques de texto, se proporciona alg&uacute;n mecanismo para lograr lo siguiente:</p>
+                <ol>
+                <li>Los colores de fondo y primer plano pueden ser elegidos por el usuario.</li>
+                <li>El ancho no es mayor de 80 caracteres o signos (40 si es CJK).</li>
+                <li>El texto no est&aacute; justificado (alineado a los m&aacute;rgenes izquierdo y derecho a la vez).</li>
+                <li>El espacio entre l&iacute;neas (interlineado) es de, al menos, un espacio y medio dentro de los p&aacute;rrafos y el espacio entre p&aacute;rrafos es, al menos, 1.5 veces mayor que el espacio entre l&iacute;neas.</li>
+                <li>El texto se ajusta sin ayudas t&eacute;cnicas hasta un 200 por ciento de modo tal que no requiere un desplazamiento horizontal para leer una l&iacute;nea de texto en una ventana a pantalla completa.</li>
+                </ol>
+                
+                <p><strong>Im&aacute;genes de texto (sin excepciones)</strong></p>
+                <p>Las im&aacute;genes de texto s&oacute;lo se utilizan como simple decoraci&oacute;n o cuando una forma de presentaci&oacute;n particular del texto resulta esencial para la informaci&oacute;n transmitida.</p>
+                
+                <p><strong>Teclado (sin excepciones)</strong></p>
+                <p>Toda la funcionalidad del contenido se puede operar a trav&eacute;s de una interfaz de teclado sin requerir una determinada velocidad en la pulsaci&oacute;n de las teclas.</p>
+                
+                <p><strong>Sin tiempo</strong></p>
+                <p>El tiempo no es parte esencial del evento o actividad presentada por el contenido, exceptuando los multimedia sincronizados no interactivos y los eventos en tiempo real.</p>
+                
+                <p><strong>Interrupciones</strong></p>
+                <p>El usuario puede postergar o suprimir las interrupciones, excepto cuando las interrupciones implican una emergencia.</p>
+                
+                <p><strong>Re-autentificaci&oacute;n</strong></p>
+                <p>Cuando expira una sesi&oacute;n autentificada, el usuario puede continuar la actividad sin p&eacute;rdida de datos tras volver a identificarse.</p>
+                
+                <p><strong>Tres destellos</strong></p>
+                <p>Las p&aacute;ginas web no contienen nada que destelle m&aacute;s de tres veces por segundo.</p>
+                
+                <p><strong>Ubicaci&oacute;n</strong></p>
+                <p>Se proporciona informaci&oacute;n acerca de la ubicaci&oacute;n del usuario dentro de un conjunto de p&aacute;ginas web.</p>
+                
+                <p><strong>Prop&oacute;sito de los enlaces (s&oacute;lo enlaces)</strong></p>
+                <p>Se proporciona un mecanismo que permite identificar el prop&oacute;sito de cada enlace con s&oacute;lo el texto del enlace, excepto cuando el prop&oacute;sito del enlace resultara ambiguo para los usuarios en general.</p>
+                
+                <p><strong>Encabezados de secci&oacute;n</strong></p>
+                <p>Se usan encabezados de secci&oacute;n para organizar el contenido.</p>
+                
+                <p><strong>Palabras inusuales</strong></p>
+                <p>Se proporciona un mecanismo para identificar las definiciones espec&iacute;ficas de palabras o frases usadas de modo inusual o restringido, incluyendo expresiones idiom&aacute;ticas y jerga.</p>
+                
+                <p><strong>Abreviaturas</strong></p>
+                <p>Se proporciona un mecanismo para identificar la forma expandida o el significado de las abreviaturas.</p>
+                
+                <p><strong>Nivel de lectura</strong></p>
+                <p>Cuando un texto requiere un nivel de lectura m&aacute;s avanzado que el nivel m&iacute;nimo de educaci&oacute;n secundaria una vez que se han eliminado nombres propios y t&iacute;tulos, se proporciona un contenido suplementario o una versi&oacute;n que no requiere un nivel de lectura mayor a ese nivel educativo.</p>
+                
+                <p><strong>Pronunciaci&oacute;n</strong></p>
+                <p>Se proporciona un mecanismo para identificar la pronunciaci&oacute;n espec&iacute;fica de las palabras cuando el significado de esas palabras, dentro del contexto, resulta ambiguo si no se conoce su pronunciaci&oacute;n.</p>
+                
+                <p><strong>Cambios a petici&oacute;n</strong></p>
+                <p>Los cambios en el contexto son iniciados &uacute;nicamente a solicitud del usuario o se proporciona un mecanismo para detener tales cambios.</p>
+                
+                <p><strong>Ayuda</strong></p>
+                <p>Se proporciona ayuda dependiente del contexto.</p>
+                
+                <p><strong>Prevenci&oacute;n de errores (todos)</strong></p>
+                <p>Para las p&aacute;ginas web que requieren al usuario el env&iacute;o de informaci&oacute;n, se cumple al menos uno de los siguientes casos:</p>
+                <ol>
+                <li>Reversible: El env&iacute;o es reversible.</li>
+                <li>Revisado: Se verifica la informaci&oacute;n para detectar errores en la entrada de datos y se proporciona al usuario una oportunidad de corregirlos.</li>
+                <li>Confirmado: Se proporciona un mecanismo para revisar, confirmar y corregir la informaci&oacute;n antes de finalizar el env&iacute;o de los datos.</li>
+                </ol>
+            </div>
+            <div id="panel_legales" class="panel" hidden>
+                <h1>Normativas y sanciones</h1>                
+                <p>Normativa y sanciones...</p>
+            </div>
+
+            <!--CSS3-->
+            <div id="panel_enlazar" class="panel" hidden>
+                <h2>Enlazando CSS3</h2>
+                <hr/>
+                <h3>En una etiqueta</h3>
+                <p style="color:red;">Texto de color rojo</p>
+                <p>&lt;p style="color:red;"&gt;Texto de color rojo&lt;/p&gt;</p>
+                <hr/>
+               <h3>En el elemento de cabecera style</h3>
+               <p>Dentro del head se haría de la siguiente forma</p>
+               <pre>
+                   &lt;style type ="text/css"&gt;
+                       p{
+                               color:red;
+                       }
+                   &lt;/style&gt;
+               </pre>
+               <hr/>
+               <h3>En un archivo externo</h3>
+               <p>Se habrá de vincular el archivo css de esta manera en el head</p>
+               <p>&lt;link rel ="stylesheet" href= "estilo1.css" type = "text/css" &gt;</p>
+            </div>
+            <div id="panel_fondo" class="panel" hidden>
+                <h2>Fondos CSS3</h2>
+                <hr/>
+                <h3>Propiedades</h3>
+                <p>background-color: Permite cambiar el color de fondo</p>
+                <p>background-image: Permite establecer una imagen de fondo</p>
+                <p>background-repeat: El fondo se repite en todas direcciones</p>
+                <p>background-position: Coloca la imagen de fondo</p>
+                <p>background-attachment: Nos permite desplazar el fondo</p>
+                <p>background: Fija en una sola propiedad el resto</p>
+                <p><b>Ejemplo:</b>background: background-color background-image background-repeatbackground-attachment background-position</p>
+            </div>
+            <div id="panel_fuentes" class="panel" hidden>
+                <h2>Fuentes CSS3</h2>
+                <hr/>
+                <h3>Propiedades</h3>
+                <p>font-size: Tamaño de la fuente</p>
+                <p>font-family: In: Permite calibrar el interlineado</p>
+                <p>font: Permite desde una sola propiedad cambiar todas las anteriores</p>
+                <p>color: Permite darle color</p>
+                <p><b>Ejemplo:</b>font:font-style font-variant font-weight font-size/line-height font-family;</p>
+                <hr/>  
+            </div>
+            <div id="panel_textos" class="panel" hidden>
+                <h2>Texto CSS3</h2>
+                <hr/>
+                <h3>Propiedades</h3>
+                <p>word-spacing: Indica la distancia entre las palabras</p>
+                <p>letter-spacing: Indica la distancia entre las letras</p>
+                <p>text-decoration: Sirve para decorar el texto</p>
+                <p>vertical-align: Posicion vertical del texto respecto al contenedor</p>
+                <p>text-align: Alineación horizontal del texto</p>
+                <p>text-indent: Sangria de la primera linea</p>
+                <p>text-transform: Transforma el texto entre mayusculas y minusculas</p>
+                <p>direction: Especifica la direccion en la que se escribe el texto</p>
+                <p>text-overflow: Indica que hacer con el tezto cuando estla dentro de un contenedor</p>
+                <p>text-shadow: COloca sombra sobre el texto</p>
+                <hr/>
+            </div>
+            
+
+            <!-- Sobre la aplicacion y ayuda-->
+             <div id="panel_ayuda" class="panel" hidden>
+                <h1>Manual de usuario</h1>
+                <p>Pulse en las diferentes secciones del menú para ir accediendo a cada una de ellas</p>
+            </div>
+             <div id="panel_creditos" class="panel" hidden>
+                <h1>Creadores de la app</h1>
+                <p>Manuel de la Torre</p>
+                <p>Álvaro Morales</p>
+                <p>Andrés Moreno</p>
+                <p>Luís David López</p>
+            </div>
+            <div id="panel_error" class="panel" hidden>
+                Caja para la gestión de errores (mostrar errores y/o avisos)
+            </div>
+            
+        </div>
+    </body>
+</html>
